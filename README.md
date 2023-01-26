@@ -95,3 +95,18 @@ Do NOT include quotes (single or double) in the output.
   - This will return the count value based on the card value passed and the string " Bet" or " Hold" based on the the condition (count>0). If the count value is greater than 0 (True), it will return '1 Bet'. If the count value is 0 or less than 0(False), it will return '0 Hold' or '-1 Hold'.
 
 - The if...else statement with the ternary value seems more readable and efficient compared to the switch statement (which I still don't quite understand).
+
+### Building JavaScript Objects
+
+- Similar to arrays. Access and modify data using 'Properties' rather than indexes.
+  
+  <!--PSEUDO-CODE
+
+  const x = {
+    "prop1": "value1",
+    "prop2": "value2",
+    "prop3": "value3"
+  }-->
+
+- Properties are stored as strings. It does not need to be, but JS will automatically typecast them as strings.
+- Separate each group of prop and value using commas, with the exception of the final prop and value.
