@@ -89,6 +89,7 @@ Do NOT include quotes (single or double) in the output.
 
 - if card value is less than or equal to 6, add 1 to count.
 - else if card value is greater than or equal to (>=) "10" (not number '10'), subtract count by 1.
+  - if...else statement uses strict equality for comparison by default. Using greater than equal (>=) in the function overrides the default rule. 
   - Using string "10" instead of number '10' as card value because we need to take into account for 'J', 'Q', 'K', and 'A', which are strings. Using greater than equal to (>=) for comparison will convert the data type. This means that if we pass any other letters into the string value (such as 'O', 'H', 'F', etc... which are not card values in this case), it will still recognize it as a string value and return '-1 Hold'.
 - After counting the cards, use ternary expression count + (count > 0 ? " Bet" : " Hold").
   - This will return the count value based on the card value passed and the string " Bet" or " Hold" based on the the condition (count>0). If the count value is greater than 0 (True), it will return '1 Bet'. If the count value is 0 or less than 0(False), it will return '0 Hold' or '-1 Hold'.
