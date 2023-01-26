@@ -14,4 +14,18 @@
   - Assign a const variable for arr.shift() as removed to store the removed number, then return the removed variable.
 
 #### Note to self
-- True and False in terms of Booleans are not strings. 
+
+- True and False in terms of Booleans are not strings.
+
+### Comparison Operators
+
+- == equality operator
+- === strict equality operator: Does not convert data types
+- != inequality operator
+- !== strict inequality operator: Does not convert data types
+- > greater than operator
+- > greater than or equal to operator
+- < less than operator
+- <= less than or equal to operator
+- && logical And operator
+- || logical Or operator
