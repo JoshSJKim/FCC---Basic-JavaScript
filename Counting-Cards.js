@@ -1,7 +1,3 @@
-let count = 0;
-
-function cc(card) {
-  // Only change code below this line
   let count = 0;
 
   function cc(card) {
@@ -29,6 +25,6 @@ function cc(card) {
   }
   // Only change code above this line
 }
-}
 
-cc(10);
+
+console.log(cc('K'));
