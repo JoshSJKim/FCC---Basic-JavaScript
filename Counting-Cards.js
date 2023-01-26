@@ -8,14 +8,14 @@
     case 4:
     case 5:
     case 6:
-       count++;
+      count++;
       break;
     case 10:
     case 'J':
     case 'Q':
     case 'K':
     case 'A':
-       count--;
+      count--;
       break;
   }
   if (count > 0) {
