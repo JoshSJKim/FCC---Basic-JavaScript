@@ -100,13 +100,36 @@ Do NOT include quotes (single or double) in the output.
 
 - Similar to arrays. Access and modify data using 'Properties' rather than indexes.
   
-  <!--PSEUDO-CODE
+  PSEUDO-CODE
 
   const x = {
     "prop1": "value1",
     "prop2": "value2",
     "prop3": "value3"
-  }-->
+  }
 
 - Properties are stored as strings. It does not need to be, but JS will automatically typecast them as strings.
 - Separate each group of prop and value using commas, with the exception of the final prop and value.
+
+#### Accessing objects using dot notation / bracket notation
+
+- use dot notation when you know the name of the property you are trying to access.
+
+const x= {
+  "prop1" = "value1",
+  "prop2" = "value2"
+}
+
+const prop1Value = x.prop1;
+const prop2Value = x.prop2;
+
+- use bracket notation when the property you are trying to access has a space in its name.
+- It can still be used for property names without a space in its name.
+
+const x= {
+  "prop one" = "value1",
+  "prop two" = "value2"
+}
+
+const oneValue = x["prop one"];
+const twoValue = x["prop two"];
