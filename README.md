@@ -12,3 +12,6 @@
   
 - The nextInLine function should then return the element that was removed.
   - Assign a const variable for arr.shift() as removed to store the removed number, then return the removed variable.
+
+#### Note to self
+- True and False in terms of Booleans are not strings. 
