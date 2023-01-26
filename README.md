@@ -79,4 +79,7 @@ Do NOT include quotes (single or double) in the output.
 
 - Use a switch statement to determine what to return based on which cards.
 - Omit any cases for cards 7,8,9 since it will have no effect on the count.
--
+
+- 1st proposed solution does not work.
+- remember to use '+' for returning values, rather than using a ','.
+- Using 'return count++' and 'return count--' will reset the count to zero, which is not the intended code. Remove 'return'.
