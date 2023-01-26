@@ -49,3 +49,7 @@ par + 2	    "Double Bogey"
 -->
 
 par and strokes will always be numeric and positive. We have added an array of all the names for your convenience.
+
+- Use if...else statements to return specific strings based on the comparison between par and number of strokes.
+- Use strict equality operators where applicable (hole in one, par...)
+-
