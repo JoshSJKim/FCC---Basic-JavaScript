@@ -122,10 +122,11 @@ const x= {
   "prop1" = "value1",
   "prop2" = "value2"
 }
-```
+
 
 const prop1Value = x.prop1;
 const prop2Value = x.prop2;
+```
 
 - use bracket notation when the property you are trying to access has a space in its name.
 - It can still be used for property names without a space in its name.
