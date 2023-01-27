@@ -245,3 +245,6 @@ INSTRUCTIONS
 
 - Add a new album to the myMusic array.
 - Add artist and title strings, release_year number, and a formats array of strings.
+
+- The only reason I get confused with this challenge is because I end up over-thinking everything by the time I finish one challenge. Thinking I need to write another function, return something, push or shift something here and there.
+- Just read the instructions. It usually tells me what I need to do. In this case, simply add it in.
