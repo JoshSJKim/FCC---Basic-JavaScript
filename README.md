@@ -183,3 +183,11 @@ or
 ```JS
 myDog["name"] = "Change/add the value";
 ```
+
+#### Delete object properties
+
+- in the same manner as changing or adding object properties. Just do not assign a value do it.
+
+```JS
+delete myDog.bark;
+```
