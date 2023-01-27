@@ -248,3 +248,26 @@ INSTRUCTIONS
 
 - The only reason I get confused with this challenge is because I end up over-thinking everything by the time I finish one challenge. Thinking I need to write another function, return something, push or shift something here and there.
 - Just read the instructions. It usually tells me what I need to do. In this case, simply add it in.
+
+#### Accessing nested objects
+
+- This is quite straight forward.
+- Assign the contents of the glove box property inside myStorage to the gloveBoxContents variable.
+- Use dot notation wherever applicable, bracket for property names with spaces in it.
+
+```js
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+// Solution
+const gloveBoxContents = myStorage.car.inside["glove box"];
+```
