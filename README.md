@@ -354,3 +354,13 @@ INSTRUCTION
     delete records[id][prop];
   }
   ```
+
+### While Loop
+
+PSEUDO-CODE
+
+```JS
+while ('condition') {
+  'execute command'
+}
+```
