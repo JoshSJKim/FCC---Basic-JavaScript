@@ -123,7 +123,6 @@ const x= {
   "prop2" = "value2"
 }
 
-
 const prop1Value = x.prop1;
 const prop2Value = x.prop2;
 ```
@@ -140,3 +139,22 @@ const x= {
 const oneValue = x["prop one"];
 const twoValue = x["prop two"];
 ```
+
+#### Accessing object properties with variables
+
+- used to access a property which is stored as a value of a variable.
+- Do not use quotes around the variable since it's not the value.
+
+```JS
+const x = {
+  "prop1": "value1",
+  "prop2": "value2",
+  "prop3": "value3"
+}
+
+const myX = "prop2";
+const myY = x[myX];
+console.log(myY);
+```
+
+The above will display "value2"
