@@ -212,5 +212,13 @@ INSTRUCTIONS
     - Where should this be assigned? "Assign the associated string (the value that is looked up) to the result variable. So, in other words, assign the value that is looked up to the result variable.
 
     ```JS
-    result = lookup[val]
+    result = lookup[val];
     ```
+
+### Testing objects for properties
+
+- Use .hasOwnProperty(propname) to determine if the property in question has the given property name. This method returns True or False.
+
+    INSTRUCTIONS
+  - Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp).
+  - If the property is found, return that property's value. If not, return "Not Found".
