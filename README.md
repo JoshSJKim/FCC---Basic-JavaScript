@@ -392,3 +392,6 @@ for (let i=0; i < myArr.length ; i++) {
   total += myArr[i];
 }
 ```
+
+- total += myArr[i] is total = total + myArr[i].
+- This will send the value of each myArr element to 'total' and add the next element in line as it iterates through the array.
