@@ -328,14 +328,15 @@ INSTRUCTION
   }
   ```
 
-    - The above if statement is passable as it is, but the following would also work.
+  - The above if statement is passable as it is, but the following would also work.
   
   ```JS
   if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks) === false) {
     records[id][prop] = [value];
   }
   ```
-    - Based on the data passed, the above if statement assumes that the value is not an empty string since the instruction says to add the value to the "tracks" property.
+
+  - Based on the data passed, the above if statement assumes that the value is not an empty string since the instruction says to add the value to the "tracks" property.
 
   - If prop is tracks and value isn't an empty string, add value to the end of the album's existing tracks array.
 
@@ -346,7 +347,6 @@ INSTRUCTION
   ```
 
   - If value is an empty string, delete the given prop property from the album.
-  -
 
   ```JS
   if (value === "") {
