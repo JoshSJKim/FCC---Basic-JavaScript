@@ -194,5 +194,23 @@ delete myDog.bark;
 
 ### Using Objects for Lookups
 
+INSTRUCTIONS
+
 - Convert the switch statement into an object called lookup.
+  - This is self explanatory.
+
 - Use it to look up val and assign the associated string to the result variable.
+  - This had me confused for a bit. My trouble with JavaScript is figuring out what to use for property, what is the value, which function is pointing to where, where is the return value going, etc.
+  - "Use it(object "lookup") to look up val"
+    - So it should be
+
+      ```JS
+      lookup[val] 
+      ```
+
+    - Not dot notation since I'm looking for a variable, and no strings since it's not a value.
+    - Where should this be assigned? "Assign the associated string (the value that is looked up) to the result variable. So, in other words, assign the value that is looked up to the result variable.
+
+    ```JS
+    result = lookup[val]
+    ```
