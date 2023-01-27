@@ -379,3 +379,16 @@ INSTRUCTIONS
 
 - Declare and initialize a variable total to 0.
 - Use a for loop to add the value of each element of the myArr array to total.
+
+- The variable myArr is already assigned.
+- Declare and initialize total = 0;
+- use a for loop for the length of myArr (for (let i=0; i<myArr.length; i++)
+- Add value of each myArr element to total (total = total + myArr[i]).
+
+```JS
+const myArr = [2,3,4,5,6]
+total = 0;
+for (let i=0; i < myArr.length ; i++) {
+  total += myArr[i];
+}
+```
