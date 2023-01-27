@@ -237,3 +237,12 @@ INSTRUCTIONS
 
   - If false (else), return "Not Found".
   
+### Manipulating Complex Objects
+
+- This one has been very confusing for me everytime around.
+
+INSTRUCTIONS
+
+- Add a new album to the myMusic array.
+- Add artist and title strings, release_year number, and a formats array of strings.
+
