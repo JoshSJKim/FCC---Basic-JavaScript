@@ -7,7 +7,7 @@ function phoneticLookup(val) {
     const lookup = {
         "alpha": "Adams",
         "bravo": "Boston",
-        "charlie": "Chicage",
+        "charlie": "Chicago",
         "delta": "Denver",
         "echo": "Easy",
         "foxtrot": "Frank"
