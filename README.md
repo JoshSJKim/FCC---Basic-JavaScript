@@ -159,9 +159,9 @@ console.log(myY);
 
 The above will display "value2"
 
-#### Updating object properties
+#### Updating/Adding object properties
 
-- You can update object properties using dot or bracket notation.
+- You can update or add object properties using dot or bracket notation.
 
 ```JS
 const myDog = {
@@ -172,14 +172,14 @@ const myDog = {
 };
 ```
 
-Change the object property by using the following.
+Change or add the object property by using the following.
 
 ```JS
-myDog.name = "Change the value";
+myDog.name = "Change/add the value";
 ```
 
 or
 
 ```JS
-myDog["name"] = "Change the value";
+myDog["name"] = "Change/add the value";
 ```
