@@ -311,6 +311,7 @@ INSTRUCTION
 - You start with an updateRecords function that takes an object literal, records, containing the musical album collection, an id, a prop (like artist or tracks), and a value. Complete the function using the rules below to modify the object passed to the function.
 
   - Your function must always return the entire record collection object.
+  - REMEMBER: prop, track, id, are all referring to the data passed in to the function.
 
   - If prop isn't tracks and value isn't an empty string, update or set that album's prop to value.
 
