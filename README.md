@@ -355,7 +355,7 @@ INSTRUCTION
   }
   ```
 
-### While Loop
+### while loop
 
 PSEUDO-CODE
 
@@ -363,4 +363,12 @@ PSEUDO-CODE
 while ('condition') {
   'execute command'
 }
+```
+
+### for loop
+
+PSEUDO-CODE
+
+```JS
+for ('initialization statement'; 'condition statement'; 'final expression');
 ```
