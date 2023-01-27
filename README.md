@@ -271,3 +271,33 @@ const myStorage = {
 // Solution
 const gloveBoxContents = myStorage.car.inside["glove box"];
 ```
+
+#### Accessing Nested Arrays
+
+- Use index (bracket notation) to access nested arrays (not nested objects)
+- Remember, index begins at 0, not 1.
+- Using dot and bracket notation, set the variable secondTree to the second item in the trees list from the myPlants object.
+
+```js
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+// Solution
+const secondTree = myPlants[1].list[1];
+```
