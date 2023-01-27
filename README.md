@@ -222,3 +222,18 @@ INSTRUCTIONS
     INSTRUCTIONS
   - Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp).
   - If the property is found, return that property's value. If not, return "Not Found".
+- use if...else statement to determine if obj.hasOwnProperty(checkProp) is true or false.
+  
+  ```JS
+  if (obj.hasOwnProperty(checkProp)) {
+  }
+  ```
+
+  - If true, return the value assigned to 'checkProp' within the object (obj). Remember to use bracket notation.
+  
+  ```JS
+  return obj[checkProp];
+  ```
+
+  - If false (else), return "Not Found".
+  

@@ -1,6 +1,6 @@
 function checkObj(obj, checkProp) {
     // Only change code below this line
-    return "Change Me!";
+       return "Change me!";
     // Only change code above this line
   }
 
