@@ -22,7 +22,15 @@ function phoneticLookup(val) {
       case "foxtrot":
         result = "Frank";
     }
-  
+
+    const lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicage",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank"
+    }
     // Only change code above this line
     return result;
   }
