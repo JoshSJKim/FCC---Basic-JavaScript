@@ -158,3 +158,28 @@ console.log(myY);
 ```
 
 The above will display "value2"
+
+#### Updating object properties
+
+- You can update object properties using dot or bracket notation.
+
+```JS
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+```
+
+Change the object property by using the following.
+
+```JS
+myDog.name = "Change the value";
+```
+
+or
+
+```JS
+myDog["name"] = "Change the value";
+```
