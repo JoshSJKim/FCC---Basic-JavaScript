@@ -403,7 +403,7 @@ INSTRUCTIONS
 - Modify function multiplyAll so that it returns the product of all the numbers in the sub-arrays of arr.
 
 - Nest two for loops to iterate through the outer array (i) and inner sub-arrays (j).
-- The for loops will send each of the values in the arrays and its sub-arrays to the product variable. Multiply resulting product by each following values of the array elements (arr[i][j]).
+- The for loops will send each of the values in the arrays and its sub-arrays to the product variable. Multiply resulting product by each following values of the array elements ```(arr[i][j])```.
 
 ```JS
 function multiplyAll(arr) {
@@ -450,3 +450,13 @@ do {
 
 - The above code is similar to the while loop. But the command specified in the do statement will ensure that the function runs at least once.
 - It will push (i) to myArr, and stop running when it reaches the while statement since i is not less than 5. Therefore the result of myArr will be [5] and 'i' will be equal to 6.
+
+### RECURSION
+
+- I'd have to say this is the most difficult concept to grasp to this point in JS.
+
+Based on what I understand so far
+
+- recursion is a technique where function calls itself in order to solve a problem.
+- As the function calls itself repeatedly, it breaks down the problem in to smaller pieces, until a base case (a condition at which point the function stops calling itself) is reached.
+- Recursion must have a base case in place, or else it will never stop executing.
