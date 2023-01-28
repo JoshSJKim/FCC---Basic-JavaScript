@@ -460,3 +460,19 @@ Based on what I understand so far
 - recursion is a technique where function calls itself in order to solve a problem.
 - As the function calls itself repeatedly, it breaks down the problem in to smaller pieces, until a base case (a condition at which point the function stops calling itself) is reached.
 - Recursion must have a base case in place, or else it will never stop executing.
+
+### JavaScript Algorithms and Data Structures - Profile Lookup
+
+INSTRUCTIONS
+
+- We have an array of objects representing different people in our contacts lists.
+
+- A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.
+
+- The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.
+
+- If both are true, then return the "value" of that property.
+
+- If name does not correspond to any contacts then return the string No such contact.
+
+- If prop does not correspond to any valid properties of a contact found to match name then return the string No such property.
