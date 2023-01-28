@@ -449,4 +449,4 @@ do {
 ```
 
 - The above code is similar to the while loop. But the command specified in the do statement will ensure that the function runs at least once.
-- It will push (i) to myArr, and stop running when it reaches the while statement since i is not less than 5. Therefore the result of myArr will be [5].
+- It will push (i) to myArr, and stop running when it reaches the while statement since i is not less than 5. Therefore the result of myArr will be [5] and 'i' will be equal to 6.
