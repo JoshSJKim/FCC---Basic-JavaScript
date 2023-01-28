@@ -470,9 +470,37 @@ INSTRUCTIONS
 - A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.
 
 - The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.
+  - Use a for loop to go through the contacts list. Since the contacts list is nested in an array, assign a variable to iterate through the array.
 
-- If both are true, then return the "value" of that property.
+    ```JS
+    for (let i = 0; i < contacts.length; i++)
+    ```
 
-- If name does not correspond to any contacts then return the string No such contact.
+  - Use if...else statement to find out if the name passed through the function is found in the contacts list, and another nested if statement to find out if the contacts in that specific array element contains the property (prop) passed through the function.
+  
+    ```JS
+    if (contacts[i].firstName === name) {
+      if (contacts[i].hasOwnProperty(prop)) {
+      }
+    }
+    ```
 
-- If prop does not correspond to any valid properties of a contact found to match name then return the string No such property.
+- If both are true, then return the "value" of that property. Return the value of the property (prop) of the specific name in the array element ```(contacts[i])```
+  
+  ```JS
+  return contacts[i][prop];
+  ```
+
+- If name does not correspond to any contacts then return the string No such contact. If the name passed through the function is not found in the contacts list, it means that the property (prop) is non-existent as well. This return statement should be left outside of the for loop, meaning that if the specified name is not found in the contact list from top to bottom, it will return "No such contact" to terminate the function.
+
+```JS
+return "No such contact"; // outside of for loop //
+```
+
+- If prop does not correspond to any valid properties of a contact found to match name then return the string No such property. After the two if statements and its return statement, add an 'else' statement to return "No such property" in the case that the name passed through the function is found in the contacts list but the second if statement (the hasOwnProperty) returns 'false.
+
+```JS
+} else {
+  return "No such property";
+}
+```

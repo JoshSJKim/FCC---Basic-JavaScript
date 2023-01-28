@@ -28,8 +28,8 @@ const contacts = [
   
   function lookUpProfile(name, prop) {
     // Only change code below this line
-  
+
     // Only change code above this line
   }
   
-  lookUpProfile("Akira", "likes");
+  lookUpProfile("Akira", "likes"));
