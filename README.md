@@ -420,3 +420,33 @@ for (let i=0; i<arr.length; i++) {
 
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 ```
+
+#### do...while loops
+
+- do...while loops behave similar to other types of loops.
+- The difference is that it ensures that the command specified in the initial 'do' statement will run at least once.
+
+```JS
+const myArr = [];
+let i = 5;
+
+while (i < 5) {
+  myArr.push(i);
+  i++;
+}
+```
+
+- The above code will fail to run on the first pass since i is not less than 5, and myArr will remain an empty array ([]).
+
+```JS
+const myArr = [];
+let i = 5;
+
+do {
+  myArr.push(i);
+  i++;
+} while (i < 5);
+```
+
+- The above code is similar to the while loop. But the command specified in the do statement will ensure that the function runs at least once.
+- It will push (i) to myArr, and stop running when it reaches the while statement since i is not less than 5. Therefore the result of myArr will be [5].
