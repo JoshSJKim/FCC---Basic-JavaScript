@@ -1,6 +1,15 @@
 function rangeOfNumbers(startNum, endNum) {
-    return[];
-}
+    if (endNum < startNum) {
+        return [];
+    } else {
+        const myArr = rangeOfNumbers(startNum, endNum - 1);
+        myArr.push(endNum);
+        return myArr;
+    }
+  }
+
+  console.log(rangeOfNumbers(1, 100));
+  
 
 
 
