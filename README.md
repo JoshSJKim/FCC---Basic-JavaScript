@@ -597,3 +597,34 @@ function checkEqual(a, b) {
   return a === b ? "Equal" : "Not Equal";
 }
 ```
+
+#### Multiple Ternary operators
+
+- Ternary operators can be chained to execute multiple commands based on various conditions, similar to if, else if, and else statements.
+
+```JS
+function checkSign(num) {
+  if (num > 0) {
+    return "positive";
+  } else if (num < 0) {
+    return "negative";
+  } else if (num === 0) {
+    return "zero";
+  } else {
+    return "undefined";
+  }
+}
+```
+
+- The above function can be written using multiple ternary operators.
+
+```JS
+function checkSign(num) {
+ return num > 0 ? "positive"
+   : num < 0 ? "negative"
+   : num === 0 ? "zero"
+   : undefined
+}
+```
+
+- It is best practice the separate each line when using multiple conditions for purposes of readability.
