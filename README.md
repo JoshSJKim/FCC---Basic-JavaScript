@@ -572,3 +572,28 @@ function convertToInteger(str) {
 ```
 
 - The above function will pass a string value and return a value parsed based on the radix (base) value defined.
+
+#### Ternary (conditional) operator
+
+- Think of it as a 'one-line' if...else statement. Simpler and more efficient.
+- The syntax is ```a ? b : c```. Where 'a' is the condition, 'b' is the code to run when condition is 'true', and 'c' is the code to run when the condition is 'false'.
+
+For example,
+
+```JS
+function checkEqual(a, b) {
+  if (a === b) {
+    return "Equal";
+  } else {
+    return "Not Equal";
+  }
+}
+```
+
+The above code can be re-written using a ternary operator.
+
+```JS
+function checkEqual(a, b) {
+  return a === b ? "Equal" : "Not Equal";
+}
+```
