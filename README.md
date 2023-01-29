@@ -545,3 +545,16 @@ function randomRange(max, min) {
 - ```((max - min + 1) + min)``` portion of the formula ensures that the random number generated falls within the defined range.
 - For example, if min is 5 and max is 10, (max-min+1) will equal 6, which will make the random number fall between 0 and 5.99.
 - But if we add the min value to the result, it will shift the range of numbers to fall within the defined range, which is 5 and 10 (inclusive, since the shifting will make the final result 11).
+
+#### parseInt function
+
+- parseInt() will change a string value to an integer.
+
+```JS
+function convertToInteger(str) {
+  return parseInt(str);
+}
+```
+
+- The above function will change a string value, such as "89" to the number value '89'.
+- If the first character of the string value can't be converted to a number, it will return NaN (Not a Number).
