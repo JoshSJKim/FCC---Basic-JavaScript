@@ -635,6 +635,29 @@ INSTRUCTIONS
 
 - We have defined a function called countdown with one parameter (n).
 - The function should use recursion to return an array containing the integers n through 1 based on the n parameter.
-- If the function is called with a number less than 1, the function should return an empty array.
 - For example, calling this function with n = 5 should return the array [5, 4, 3, 2, 1].
 - Your function must use recursion by calling itself and must not use loops of any kind.
+
+- If the function is called with a number less than 1, the function should return an empty array.
+  - This will be the base case. When it is reached, the function will stop calling it self.
+  
+  ```JS
+  function countdown(n) {
+    if (n < 1) {
+      return [];
+    } else {
+      const myArr = countdown(n - 1);
+      myArr.unshift(n);
+      return myArr;
+    }
+  }
+  ```
+
+  - When the base case is reached, it will return an empty array in to which the returned numbers that are stored in the call stack will be re-entered, last-in-first-out (LIFO).
+  - The commands under the else statement will be executed until the base case is reached.
+  - Declare a variable (myArr) to assign to the empty array returned when the base case is reached.
+  - Modify the 'n' value so that it decreases by 1 every time it runs through the command.
+  - unshift the returned 'n' values to myArr. Last in first out. The sequence of the 'n' values stored in the call stack would be 10, 9, 8 ... until it reaches 1. The "unshifted" sequence of 'n' values returned to myArr would be 1, 2, 3, 4, 5...10. But since it's 'unshift', the first number returned to myArr will be pushed to the end of the array. As a result ```[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]```
+
+- NOTE TO SELF: Do not confuse shift and unshift. shift will remove the first element of an array. unshift will enter an element to the beginning of an array.
+  shift - out. unshift - in.
