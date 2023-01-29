@@ -548,7 +548,7 @@ function randomRange(max, min) {
 
 #### parseInt function
 
-- parseInt() will change a string value to an integer.
+- parseInt() will parse (interpret) a string value to an integer.
 
 ```JS
 function convertToInteger(str) {
@@ -556,5 +556,19 @@ function convertToInteger(str) {
 }
 ```
 
-- The above function will change a string value, such as "89" to the number value '89'.
+- The above function will parse a string value, such as "89" to the number value '89'.
 - If the first character of the string value can't be converted to a number, it will return NaN (Not a Number).
+
+### RADIX
+
+- Another concept that I am very unfamiliar with.
+- Radix, also known as base in mathematics, is the number of unique digits or symbols used to represent numbers in a positional numeral system.
+  The most common base used is base 10. Other common bases include base 2 (binary), base 8 (octal), and base 16 (hexadecimal).
+
+```JS
+function convertToInteger(str) {
+  return parseInt(str, radix);
+}
+```
+
+- The above function will pass a string value and return a value parsed based on the radix (base) value defined.
