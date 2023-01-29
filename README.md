@@ -661,3 +661,13 @@ INSTRUCTIONS
 
 - NOTE TO SELF: Do not confuse shift and unshift. shift will remove the first element of an array. unshift will enter an element to the beginning of an array.
   shift - out. unshift - in.
+
+### JavaScript Algorithms and Data Structures - Recursion range of numbers
+
+  INSTRUCTIONS
+
+- We have defined a function named rangeOfNumbers with two parameters.
+- The function should return an array of integers which begins with a number represented by the startNum parameter and ends with a number represented by the endNum parameter.
+- The starting number will always be less than or equal to the ending number.
+- Your function must use recursion by calling itself and not use loops of any kind.
+- It should also work for cases where both startNum and endNum are the same.
