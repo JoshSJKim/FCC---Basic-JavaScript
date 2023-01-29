@@ -531,3 +531,17 @@ return Math.floor(Math.random() * 50);
 ```
 
 - Multiplying the random decimal by 50 will generate a random whole number between 0 and 49.
+
+#### Generating random whole numbers within a range
+
+- Use the following formula to generate a random whole number between defined max and min values.
+
+```JS
+function randomRange(max, min) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+```
+
+- ```((max - min + 1) + min)``` portion of the formula ensures that the random number generated falls within the defined range.
+- For example, if min is 5 and max is 10, (max-min+1) will equal 6, which will make the random number fall between 0 and 5.99.
+- But if we add the min value to the result, it will shift the range of numbers to fall within the defined range, which is 5 and 10 (inclusive, since the shifting will make the final result 11).
