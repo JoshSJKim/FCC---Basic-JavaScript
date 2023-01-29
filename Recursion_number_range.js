@@ -1,7 +1,7 @@
 function rangeOfNumbers(startNum, endNum) {
-  
-    return [];
-  };
+    return[];
+}
+
 
 
   /* We have defined a function named rangeOfNumbers with two parameters. 
