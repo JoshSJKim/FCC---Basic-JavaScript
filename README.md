@@ -516,3 +516,18 @@ function randomFraction() {
 ```
 
 - The above function will return a random fraction between 0 and 1.
+
+#### Generating random whole numbers
+
+- Use Math.random() to generate a random fraction.
+- Multiply the random fraction by a larger whole number.
+- Use Math.floor() round the number down to the nearest whole number.
+- Remember, the function executes from inside the brackets outwards.
+
+```JS
+function randomWholeNumber() {
+return Math.floor(Math.random() * 50);
+}
+```
+
+- Multiplying the random decimal by 50 will generate a random whole number between 0 and 49.
