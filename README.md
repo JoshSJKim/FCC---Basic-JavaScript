@@ -3,6 +3,7 @@
 ## Understanding Basic JavaScript
 
 - I will be going through the Basic JavaScript course on freeCodeCamp and documenting parts and concepts that I find difficult to comprehend.
+- UPDATE: I will be going through the Basic JavaScript module again and document all exercises for personal future reference.
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
