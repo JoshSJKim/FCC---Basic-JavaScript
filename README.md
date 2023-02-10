@@ -5,6 +5,35 @@
 - I will be going through the Basic JavaScript course on freeCodeCamp and documenting parts and concepts that I find difficult to comprehend.
 - UPDATE: I will be going through the Basic JavaScript module again and document all exercises for personal future reference.
 
+## Commenting in JavaScript
+
+- Comments are lines of code that JavaScript ignores.
+- It is a great way to document notes on codes for personal use, or other programmers who may be collaborating or taking over the project.
+- There are two methods of commenting in JavaScript. in-line and multi-line
+
+### In-line
+
+```js
+// This is an in-line comment
+```
+
+- Note that you do not need to 'close' the comment.
+- Use for simple notes.
+
+### Multi-line
+
+```js
+/* This is a 
+multi-line comment */
+```
+
+- multi-line comments must be closed.
+- use for elaborating the notes.
+
+- Good commenting will improve communication, as well as the intent of the code.
+
+- Build a habit of documenting everything, explaining the intent of the code, verbalizing the flow of the code.
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
