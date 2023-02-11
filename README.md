@@ -279,6 +279,34 @@ console.log(sampleStr);   // Hannah said, "Josh is learning JavaScript".
 - The backslash tells JavaScript that the start quotation mark of the literal quote inside the string is not the end of the string.
 - It's telling it to look further, and the literal quote should be included inside the string.
 
+### Quoting Strings with Single Quotes
+
+- Both double quotes and single quotes may be used in JavaScript.
+- But the start and end quotes must be of the same type.
+
+```js
+const myStr = "<a href=\"https://www.example.com\" target=\"_blank\">Link</a>";
+```
+
+- The above example uses escape characters to avoid throwing an error. It can be simplified using both types of quotes
+
+```js
+const myStr = '<a href="https://www.example.com" target="_blank">Link</a>';
+```
+
+- But there may also be cases where the single quote mark is used as an apostrophe
+
+```js
+const myStr = 'He said, "I don't think I can do this any longer".';
+```
+
+- The above string will throw an error because the apostrophe used in the word "don't" will close the string.
+- In such cases, a combination of single and double quotes, as well as escape characters must be used.
+
+```js
+const myStr = 'He said, "I don\'t think I can do this any longer".';
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
