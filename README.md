@@ -146,6 +146,15 @@ let camper = "David";
 console.log(camper);    // Console will display 'SyntaxError: unknown: Identifier 'camper' has already been declared.
 ```
 
+## Declare a Read-Only Variable with the const Keyword
+
+- ```const``` is another keyword used to declare a variable.
+- Not only is it 'non-overwritable' like the ```let``` keyword, but ```const``` is Read-Only.
+- Once it is assigned, it cannot be reassigned.
+- If there is a variable in your code that you want to remain constant throughout the code, use the 'const' keyword to declare the variable.
+
+- NOTE: It is common to use all uppercase letters for immutable variables and lowercase or camelCase for mutable variables.
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
