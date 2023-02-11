@@ -200,6 +200,27 @@ console.log(sum);   // 20
 
 ```i--;``` is equivalent to ```i = i - 1;```
 
+## Create Decimal Numbers with JS
+
+- Decimal values can be stored/assigned to a variable.
+- Decimal values are sometimes referred to as 'floating point' numbers or 'floats'
+
+Simply assign a decimal value to a variable ```const myDecimal = 3.14;```
+
+## Multiply/Divide Two Decimals with JS
+
+- Same logic applies.
+
+```js
+const product = 2.0 * 2.5;  // Multiply using '*'
+console.log(product);       // console will display 5.0
+```
+
+```js
+const quotient = 4.4 / 2.0; // Divide using '/'
+console.log(quotient);      // console will display 2.2
+
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
