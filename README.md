@@ -56,6 +56,23 @@ multi-line comment */
 - Variable names can be composed of numbers, letters, $ or _
 - It may not contain spaces or start with a number
 
+## Storing/Assigning values with the Assignment Operator
+
+- Use the equal sign (=) to assign value (data) to a variable.
+- What is commonly known as the 'equal sign' is called the assignment operator in JavaScript.
+
+```js
+myVariable = 5;   // This assigns 5 to the variable 'myVariable'
+```
+  
+- If there are any calculations on the right side of the assignment operator, the calculation is performed before the value is assigned to the variable.
+
+```js
+var a;    // This declares variable 'a'
+a = 7;    // This assigns the value 7 to the variable 'a'
+          // Whenever 'a' appears in a code, it will recognize it as '7'
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
