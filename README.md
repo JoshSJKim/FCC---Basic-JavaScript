@@ -221,7 +221,7 @@ const quotient = 4.4 / 2.0; // Divide using '/'
 console.log(quotient);      // console will display 2.2
 ```
 
-## Finding a Remainder in JavaScript
+### Finding a Remainder in JavaScript
 
 - The remainder operator ```%``` gives the remainder of the division of two numbers
 
@@ -237,7 +237,7 @@ Math.floor(5 / 2) = 2 // Quotient
 - 17 % 2 = 1 (17/2 = 8 + 1, therefore 17 is odd)
 - 48 % 2 = 0 (48/2 = 24, no remainder, therefore 48 is even)
 
-## Compound Assignment with Augmented Addition/Subtraction/multiplication/Division
+### Compound Assignment with Augmented Addition/Subtraction/multiplication/Division
 
 - In programming, it is common to use assignments to modify the contents of a variable.
 
@@ -263,6 +263,21 @@ console.log(myVar); // Console will display the updated value of myVar, which is
 - Once again, same when dividing
 
 ```myVar /= 5;``` is equivalent to ```myVar = myVar / 5;```
+
+### Escaping Literal Quotes in Strings
+
+- When defining a string, it must start and end with a single or a double quote.
+- But what if there is a literal quote using single or double quotes inside the string?
+
+- You can ```escape``` a quote by placing a backslash (\) in FRONT of the quotation mark.
+
+```js
+const sampleStr = "Hannah said, \"Josh is learning JavaScript\".";   // Remember to close the string after the literal quote inside the string
+console.log(sampleStr);   // Hannah said, "Josh is learning JavaScript".
+```
+
+- The backslash tells JavaScript that the start quotation mark of the literal quote inside the string is not the end of the string.
+- It's telling it to look further, and the literal quote should be included inside the string.
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
