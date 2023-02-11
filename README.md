@@ -73,6 +73,24 @@ a = 7;    // This assigns the value 7 to the variable 'a'
           // Whenever 'a' appears in a code, it will recognize it as '7'
 ```
 
+## Assigning Variable Value to Another Variable
+
+- After a value is assigned to a variable using the assignment operator, that value assigned to one variable can be assigned to another variable by using the assignment operator again.
+
+```js
+var myVar;
+myVar = 5;    // 5 is assigned to variable 'myVar'
+var myNum;
+myNum = myVar // Simply assign 'myVar' as the value of 'myNum'. Whenever myVar appears, it is recognized as 5 in the code.
+```
+
+## Initializing Variables with the Assignment Operator
+
+- It is common to initialize a variable in the same line it is declared.
+- In other words, rather than declaring a variable and assigning a value separately, value is assigned to the variable as it is declared.
+
+```var a = 9;```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
