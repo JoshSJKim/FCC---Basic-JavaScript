@@ -178,9 +178,17 @@ const sum = 10 + 10;
 console.log(sum);   // 20
 ```
 
+## Subtract One Number from Another in JS
 
+- Use the '-' subtraction operator to subtract numbers in JS
 
-## 
+## Multiply Two Numbers with JS
+
+- Use the '*' multiplication operator to multiply numbers
+
+## Divide One Number by Another with JS
+
+- Use the '/' division operator to divide numbers
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
