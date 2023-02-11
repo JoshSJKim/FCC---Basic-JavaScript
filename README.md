@@ -237,6 +237,21 @@ Math.floor(5 / 2) = 2 // Quotient
 - 17 % 2 = 1 (17/2 = 8 + 1, therefore 17 is odd)
 - 48 % 2 = 0 (48/2 = 24, no remainder, therefore 48 is even)
 
+## Compound Assignment with Augmented Addition
+
+- In programming, it is common to use assignments to modify the contents of a variable.
+
+- ```myVar = myVar + 5;``` This will add 5 to the value of 'myVar' and reassign the updated value to 'myVar'.
+  - Remember, everything to the right of the assignment operator is executed first.
+- Modifying assignments in this manner is very common, and there are operators that execute the math operation and assignment at the same time.
+- To do this use the += operator.
+
+```js
+let myVar = 1;
+myVar += 5;         // This is equivalent to myVar = myVar + 5
+console.log(myVar); // Console will display the updated value of myVar, which is 6.
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
