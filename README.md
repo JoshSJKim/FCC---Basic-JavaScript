@@ -100,6 +100,22 @@ var myFirstName = "Josh";   // variable values enclosed in quotes are called 'st
 var myLastName = "Kim";     // Both single and double quotes can be used. String literals can be composed of zero or more characters
 ```
 
+## Understanding Uninitialized Variables
+
+- When JS variables are defined, they initially have the value 'undefined'.
+- If a mathematical operation on an undefined variable, the result will return 'NaN' (Not a Number)
+- If an undefined variable is concatenated ("added") with a string, it will return a string of 'undefined'.
+
+```js
+var a;
+var b;
+var c;
+
+a = a + 1;            // NaN
+b = b + 5;            // NaN
+c = c + " String!";   // undefined String!
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
