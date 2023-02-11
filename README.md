@@ -5,13 +5,13 @@
 - I will be going through the Basic JavaScript course on freeCodeCamp and documenting parts and concepts that I find difficult to comprehend.
 - UPDATE: I will be going through the Basic JavaScript module again and document all exercises for personal future reference.
 
-## Commenting in JavaScript
+### Commenting in JavaScript
 
 - Comments are lines of code that JavaScript ignores.
 - It is a great way to document notes on codes for personal use, or other programmers who may be collaborating or taking over the project.
 - There are two methods of commenting in JavaScript. in-line and multi-line
 
-### In-line
+#### In-line
 
 ```js
 // This is an in-line comment
@@ -20,7 +20,7 @@
 - Note that you do not need to 'close' the comment.
 - Use for simple notes.
 
-### Multi-line
+#### Multi-line
 
 ```js
 /* This is a 
@@ -34,7 +34,7 @@ multi-line comment */
 
 - Build a habit of documenting everything, explaining the intent of the code, verbalizing the flow of the code.
 
-## Declare JavaScript Variables
+### Declare JavaScript Variables
 
 - 'Data' is anything that is meaningful to the computer.
 - JavaScript provides eight different data types
@@ -56,7 +56,7 @@ multi-line comment */
 - Variable names can be composed of numbers, letters, $ or _
 - It may not contain spaces or start with a number
 
-## Storing/Assigning values with the Assignment Operator
+### Storing/Assigning values with the Assignment Operator
 
 - Use the equal sign (=) to assign value (data) to a variable.
 - What is commonly known as the 'equal sign' is called the assignment operator in JavaScript.
@@ -73,7 +73,7 @@ a = 7;    // This assigns the value 7 to the variable 'a'
           // Whenever 'a' appears in a code, it will recognize it as '7'
 ```
 
-## Assigning Variable Value to Another Variable
+### Assigning Variable Value to Another Variable
 
 - After a value is assigned to a variable using the assignment operator, that value assigned to one variable can be assigned to another variable by using the assignment operator again.
 
@@ -84,14 +84,14 @@ var myNum;
 myNum = myVar // Simply assign 'myVar' as the value of 'myNum'. Whenever myVar appears, it is recognized as 5 in the code.
 ```
 
-## Initializing Variables with the Assignment Operator
+### Initializing Variables with the Assignment Operator
 
 - It is common to initialize a variable in the same line it is declared.
 - In other words, rather than declaring a variable and assigning a value separately, value is assigned to the variable as it is declared.
 
 ```var a = 9;```
 
-## Declare String Variables
+### Declare String Variables
 
 - In the same manner as shown in the previous examples, declare and initialize string variables.
 
@@ -100,7 +100,7 @@ var myFirstName = "Josh";   // variable values enclosed in quotes are called 'st
 var myLastName = "Kim";     // Both single and double quotes can be used. String literals can be composed of zero or more characters
 ```
 
-## Understanding Uninitialized Variables
+### Understanding Uninitialized Variables
 
 - When JS variables are defined, they initially have the value 'undefined'.
 - If a mathematical operation on an undefined variable, the result will return 'NaN' (Not a Number)
@@ -116,7 +116,7 @@ b = b + 5;            // NaN
 c = c + " String!";   // undefined String!
 ```
 
-## Understanding Case Sensitivity in Variables
+### Understanding Case Sensitivity in Variables
 
 - In JS, all variables and function names are case sensitive.
 - While it is possible to have multiple variables with the same name but different letter casing.
@@ -124,7 +124,7 @@ c = c + " String!";   // undefined String!
 
 - Best practice is to use ```camelCase```.
 
-## Differences between var and let keywords
+### Differences between var and let keywords
 
 - One of the biggest problems with the ```var``` keyword is that it can be overwritten.
   
@@ -146,7 +146,7 @@ let camper = "David";
 console.log(camper);    // Console will display 'SyntaxError: unknown: Identifier 'camper' has already been declared.
 ```
 
-## Declare a Read-Only Variable with the const Keyword
+### Declare a Read-Only Variable with the const Keyword
 
 - ```const``` is another keyword used to declare a variable.
 - Not only is it 'non-overwritable' like the ```let``` keyword, but ```const``` is Read-Only.
@@ -168,7 +168,7 @@ console.log(FCC, fact);   // 'freeCodeCamp is awesome!'
 
 ---
 
-## Add Two Numbers with JavaScript
+### Add Two Numbers with JavaScript
 
 - ```Number``` is a data type is JS that represent numeric data
 - Just like in mathematics, the '+' sign is used as the 'addition operator' in JS.
@@ -178,19 +178,19 @@ const sum = 10 + 10;
 console.log(sum);   // 20
 ```
 
-## Subtract One Number from Another in JS
+### Subtract One Number from Another in JS
 
 - Use the '-' subtraction operator to subtract numbers in JS
 
-## Multiply Two Numbers with JS
+### Multiply Two Numbers with JS
 
 - Use the '*' multiplication operator to multiply numbers
 
-## Divide One Number by Another with JS
+### Divide One Number by Another with JS
 
 - Use the '/' division operator to divide numbers
 
-## Increment/Decrement a Number with JavaScript
+### Increment/Decrement a Number with JavaScript
 
 - Add 1 to a variable by using the ++ operator
 
@@ -200,14 +200,14 @@ console.log(sum);   // 20
 
 ```i--;``` is equivalent to ```i = i - 1;```
 
-## Create Decimal Numbers with JS
+### Create Decimal Numbers with JS
 
 - Decimal values can be stored/assigned to a variable.
 - Decimal values are sometimes referred to as 'floating point' numbers or 'floats'
 
 Simply assign a decimal value to a variable ```const myDecimal = 3.14;```
 
-## Multiply/Divide Two Decimals with JS
+### Multiply/Divide Two Decimals with JS
 
 - Same logic applies.
 
@@ -219,7 +219,23 @@ console.log(product);       // console will display 5.0
 ```js
 const quotient = 4.4 / 2.0; // Divide using '/'
 console.log(quotient);      // console will display 2.2
+```
 
+## Finding a Remainder in JavaScript
+
+- The remainder operator ```%``` gives the remainder of the division of two numbers
+
+```js
+5 % 2 = 1 // because
+Math.floor(5 / 2) = 2 // Quotient
+2 * 2 = 4 // Therefore
+5 - 4 = 1 // Remainder
+```
+
+- A number can be checked if it's even or odd by dividing the number by 2 and checking its remainder
+
+- 17 % 2 = 1 (17/2 = 8 + 1, therefore 17 is odd)
+- 48 % 2 = 0 (48/2 = 24, no remainder, therefore 48 is even)
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
