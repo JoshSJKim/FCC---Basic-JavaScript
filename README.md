@@ -91,6 +91,15 @@ myNum = myVar // Simply assign 'myVar' as the value of 'myNum'. Whenever myVar a
 
 ```var a = 9;```
 
+## Declare String Variables
+
+- In the same manner as shown in the previous examples, declare and initialize string variables.
+
+```js
+var myFirstName = "Josh";   // variable values enclosed in quotes are called 'string literals'
+var myLastName = "Kim";     // Both single and double quotes can be used. String literals can be composed of zero or more characters
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
