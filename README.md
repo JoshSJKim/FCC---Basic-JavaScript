@@ -116,6 +116,14 @@ b = b + 5;            // NaN
 c = c + " String!";   // undefined String!
 ```
 
+## Understanding Case Sensitivity in Variables
+
+- In JS, all variables and function names are case sensitive.
+- While it is possible to have multiple variables with the same name but different letter casing.
+- But it is advised not to do so for sake of clarity.
+
+- Best practice is to use ```camelCase```.
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
