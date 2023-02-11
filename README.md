@@ -155,6 +155,33 @@ console.log(camper);    // Console will display 'SyntaxError: unknown: Identifie
 
 - NOTE: It is common to use all uppercase letters for immutable variables and lowercase or camelCase for mutable variables.
 
+```js
+const FCC = "freeCodeCamp";
+let fact = "is cool!";
+fact = "is awesome!";
+console.log(FCC, fact);   // 'freeCodeCamp is awesome!'
+```
+
+- Note that the value of the variable 'fact' can be reassigned.
+- But if you try to redeclare the variable 'fact' with the 'let' keyword, it will throw a syntax error saying "identifier 'fact' has already been declared"
+- If you try to assign a new variable to 'FCC', which is declared with a 'const' keyword, it will throw a 'TypeError' saying "'FCC' is read-only".
+
+---
+
+## Add Two Numbers with JavaScript
+
+- ```Number``` is a data type is JS that represent numeric data
+- Just like in mathematics, the '+' sign is used as the 'addition operator' in JS.
+
+```js
+const sum = 10 + 10;
+console.log(sum);   // 20
+```
+
+
+
+## 
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
