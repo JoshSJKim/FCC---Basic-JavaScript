@@ -124,6 +124,28 @@ c = c + " String!";   // undefined String!
 
 - Best practice is to use ```camelCase```.
 
+## Differences between var and let keywords
+
+- One of the biggest problems with the ```var``` keyword is that it can be overwritten.
+  
+```js
+var camper = "James";   // variable 'camper' is originally declared as "James"
+var camper = "David";   // Somewhere along the code, same variable "camper" is declared again as "David"
+console.log(camper);    // console will display "David"
+```
+
+- This may not be much of a problem for simple codes.
+- But as the code becomes more complex, it is highly possible to unintentionally overwrite previously declared variables.
+- Also, since it is not recognized as an error, it is more difficult to debug such cases.
+
+- Use the keyword ```let``` instead to prevent such errors
+
+```js
+let camper = "James";
+let camper = "David";
+console.log(camper);    // Console will display 'SyntaxError: unknown: Identifier 'camper' has already been declared.
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
