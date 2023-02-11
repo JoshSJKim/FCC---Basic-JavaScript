@@ -190,6 +190,16 @@ console.log(sum);   // 20
 
 - Use the '/' division operator to divide numbers
 
+## Increment/Decrement a Number with JavaScript
+
+- Add 1 to a variable by using the ++ operator
+
+```i++;``` in JS is equivalent to ```i = i + 1;```
+
+- Conversely, subtract 1 from a variable using the -- operator
+
+```i--;``` is equivalent to ```i = i - 1;```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
