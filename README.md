@@ -34,6 +34,28 @@ multi-line comment */
 
 - Build a habit of documenting everything, explaining the intent of the code, verbalizing the flow of the code.
 
+## Declare JavaScript Variables
+
+- 'Data' is anything that is meaningful to the computer.
+- JavaScript provides eight different data types
+  - undefined
+  - null
+  - boolean (true / false)
+  - string ("string" or 'string')
+  - symbol
+  - bigint
+  - number (0123456789)
+  - object ([], {})
+
+- Variables allow computers to store and manipulate data in a dynamic manner.
+- This is done by giving the data a more "approachable" label rather than using the data itself.
+- Any of the above data types may be stored in a variable.
+
+- Create or 'declare' a variable by placing the keyword ```var``` in front of the variable name, and end the statement with semicolons(;)
+  ```var myName;```
+- Variable names can be composed of numbers, letters, $ or _
+- It may not contain spaces or start with a number
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
