@@ -393,6 +393,25 @@ firstLetterOfLastName = lastName[0];
 console.log(firstLetterOfLastName);     // L
 ```
 
+### Understand String Immutability
+
+- In JavaScript, string values are immutable. It cannot be altered or modified once created/declared.
+
+- For example, if you try to reassign a different character to a certain index position of a variable value using the following method, it will throw an error.
+
+```js
+let myStr = "Bob";
+myStr[0] = "J";
+```
+
+- This does not mean that the variable itself cannot be modified or reassigned.
+- You can reassign a variable with a new value, as shown below.
+
+```js
+let myStr = "Jello World";
+myStr = "Hello World";
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
