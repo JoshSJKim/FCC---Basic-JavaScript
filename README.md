@@ -649,6 +649,34 @@ let complexArray = [
     }
   ]
 ];
+```
+
+### Access an Array's Contents Using Bracket Notation
+
+- The fundamental feature of any data structure is the ability to store data, and also access and retrieve the stored data.
+
+Shown below is a simple array
+
+```js
+let ourArray = ["a", "b", "c"];
+```
+
+- Each item/element in an array has an index, which serves as the position of that item in the array.
+- Remember JavaScript uses zero-based indexing.
+- Use bracket notation to access an item in an array as shown below.
+
+```js
+let ourVariable = ourArray[0];
+```
+
+- The above variable declaration will retrieve the item placed in the '0th' position in ourArray and assign it to 'ourVariable'
+
+- Also, use the same notation to reassign a value to a specific position in the array.
+
+```js
+ourArray[1] = "not b anymore";
+console.log(ourArray);      // Console will display ["a", "not b anymore", "c"]
+```
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
