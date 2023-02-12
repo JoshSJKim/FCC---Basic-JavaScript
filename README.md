@@ -376,6 +376,23 @@ console.log(lastNameLength);    // 8
 
 - Note that if there are spaces present in the string, it will also be accounted for in the length result.
 
+### Use Bracket Notation to Find the First Character in a String
+
+- 'Bracket notation' is used to identify a character at a specific index within a string.
+
+- VERY IMPORTANT TO NOTE: Most programming languages do not begin counting at 1.
+  - The count begins at 0. This is called ```zero-based indexing```.
+
+- In order to specify a certain position in the string, use the bracket notation and specify the position of the desired character in the string.
+
+```js
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+firstLetterOfLastName = lastName[0];
+console.log(firstLetterOfLastName);     // L
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
