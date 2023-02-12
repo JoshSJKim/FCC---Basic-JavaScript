@@ -513,6 +513,26 @@ console.log(myArray);   // [45, 64, 99]
 
 - Note that there shouldn't be any spaces between the array name and the square brackets.
 
+### Access Multi-Dimensional Arrays with Indexes
+
+- It sounds more intimidating than it is.
+- It is just an array of arrays.
+- First set of brackets refer to the data entries of the outermost (first level) array.
+- Each additional pair of brackets refers to the next level of entries.
+
+```js
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+const subarray = arr[3];          // [[10, 11, 12], 13, 14]
+const nestedsubarray = arr[3][0]; // [10, 11, 12]
+const element = arr[3][0][1];     // [11]
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
