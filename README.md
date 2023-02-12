@@ -582,6 +582,23 @@ ourArray.unshift("Happy");  // Adds "Happy" as the first element of the array
 console.log(ourArray);      // ["Happy", "J", "cat"]
 ```
 
+### Shopping List
+
+- Create a shopping list.
+- Add strings (items) and numbers (quantity) in sub-arrays contained in a single array.
+- List at least 5 items.
+- This is quite self-explanatory.
+
+```js
+const myList = [
+  ["milk", 3],
+  ["apples", 12],
+  ["cucumbers", 4],
+  ["bell peppers", 6],
+  ["cheese", 1]
+];
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
