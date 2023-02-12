@@ -468,6 +468,24 @@ const wordBlanks = "The " + myAdjective + " hairy " + myNoun + " suddenly " + my
 - Notice that the declared variable values do not include spaces.
 - In order to add a space between the declared variables, simply add an empty string with a space.
 
+### Store Multiple Values in One Variable Using JavaScript Arrays
+
+- Multiple data can be stored in one place using the ```array``` variable.
+- To declare an array, use square brackets to open and close the variable, and separate each value within with a comma.
+- Arrays can contain both strings and numbers at the same time.
+
+```js
+const myArray = ["one", 2];
+```
+
+### Nest One Array within Another Array
+
+- Multiple arrays can be nested in a single array as well.
+
+```js
+const myArray = [["Josh", 43], ["Hannah", 42], ["Nathan", 9], ["JJ", 6], ["Jubilee", 3]]
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
