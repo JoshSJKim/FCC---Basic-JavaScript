@@ -331,6 +331,26 @@ const ourStr = "This is the start. " + "This is the end.";  // "This is the star
 
 - Note that you need to take spaces between strings into account.
 
+### Concatenating Strings with the Plus Equals Operator
+
+- Use the ```+=``` operator to concatenate a string onto the end of an existing string variable.
+- Reminder: You need to take spaces between strings into account.
+
+```js
+let myStr = "This is the first sentence.";
+myStr += " This is the second sentence.";  // "This is the first sentence. This is the second sentence."
+```
+
+### Constructing String with Variables
+
+- Sometimes you may need to add in variables to strings
+
+```js
+const myName = "Josh";
+const myStr = "My name is " + myName + " and I am well!";
+console.log(myStr);     // "My name is Josh and I am well!"
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
