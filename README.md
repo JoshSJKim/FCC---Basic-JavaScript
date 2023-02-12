@@ -326,7 +326,7 @@ Note: Backslash itself must be escaped in order to display as a backslash
 - When ```+``` is used with strings, it is called the 'concatenation operator'.
 
 ```js
-const ourStr = "This is the start. " + "This is the end.";
+const ourStr = "This is the start. " + "This is the end.";  // "This is the start. This is the end."
 ```
 
 - Note that you need to take spaces between strings into account.
