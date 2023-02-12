@@ -374,6 +374,8 @@ lastNameLength = lastName.length;
 console.log(lastNameLength);    // 8
 ```
 
+- Note that if there are spaces present in the string, it will also be accounted for in the length result.
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
