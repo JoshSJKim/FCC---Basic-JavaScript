@@ -546,6 +546,20 @@ const arr2 = ["Stimpson", "J", "cat"];
 arr2.push(["happy", "joy"]);          // console will display ["Stimpson", "J", "cat", ["happy", "joy"]]
 ```
 
+### Manipulate Arrays with pop Method
+
+- Remove data from the end of an array using the ```pop()``` function
+- The removed value can be stored by assigning it to another variable.
+- The array with the removed element is returned
+- Any type of data entry can be 'popped' off from an array - numbers, strings, nested arrays, etc.
+
+```js
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);   // 6
+console.log(threeArr);  // [1, 4]
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
