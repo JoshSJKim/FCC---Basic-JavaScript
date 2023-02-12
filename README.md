@@ -304,8 +304,22 @@ const myStr = 'He said, "I don't think I can do this any longer".';
 - In such cases, a combination of single and double quotes, as well as escape characters must be used.
 
 ```js
-const myStr = 'He said, "I don\'t think I can do this any longer".';
+const myStr = 'He said, "I don\'t think I can do this any longer".';\
 ```
+
+### Escape Sequences in Strings
+
+- Quotes are not the only characters that can be escaped inside a string.
+  - ```\'``` single quote
+  - ```\"``` double quote
+  - ```\\``` backslash
+  - ```\n``` new line
+  - ```\t``` tab
+  - ```\r``` carriage return
+  - ```\b``` word boundary
+  - ```\f``` form feed
+
+Note: Backslash itself must be escaped in order to display as a backslash
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
