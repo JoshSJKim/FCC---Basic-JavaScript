@@ -412,6 +412,27 @@ let myStr = "Jello World";
 myStr = "Hello World";
 ```
 
+## Use Bracket Notation to Find the Nth Character in a String
+
+- Use the bracket notation to find a character at other index positions in a string.
+
+```js
+const lastName = "Lovelace";
+const thirdLetterOfLastName = lastName[2];
+console.log(thirdLetterOfLastName);   // v
+```
+
+### Use Bracket Notation to Find the Last Character in a String
+
+- To get the last letter of a string (the length of the string is unknown), subtract one from the string's length.
+- The syntax is ```someVariable[someVariable.length - 1]```
+
+```js
+const lastName = "Lovelace";
+const lastLetterOfLastName = lastName[lastName.length - 1];
+console.log(lastLetterOfLastName);    // e
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
