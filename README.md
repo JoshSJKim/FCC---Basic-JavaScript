@@ -599,6 +599,20 @@ const myList = [
 ];
 ```
 
+### Write Reusable JavaScript with Functions
+
+- Divide up the code in to reusable parts called functions
+
+```js
+function functionName() {
+  console.log("Hello World");
+}
+```
+
+- Call or invoke the function by using its name followed by parentheses.  (functionName();)
+- Each time the above function is called, the console will display "Hello World"
+- All of the code between the curly braces will be executed when the function is called.
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
