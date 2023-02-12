@@ -560,6 +560,17 @@ console.log(oneDown);   // 6
 console.log(threeArr);  // [1, 4]
 ```
 
+### Manipulate Arrays with shift Method
+
+- Use ```shift()``` remove the first element of an array
+  
+```js
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift();
+console.log(ourArray);            // ["J", ["cat"]]
+console.log(removedFromOurArray); // "Stimpson"
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
