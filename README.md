@@ -571,6 +571,17 @@ console.log(ourArray);            // ["J", ["cat"]]
 console.log(removedFromOurArray); // "Stimpson"
 ```
 
+### Manipulate Arrays with unshift Method
+
+- Use ```unshift()``` to add elements to the beginning of an array, just like ```push()``` adds elements to the end of an array.
+
+```js
+const ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();           // Removes "Stimpson"
+ourArray.unshift("Happy");  // Adds "Happy" as the first element of the array
+console.log(ourArray);      // ["Happy", "J", "cat"]
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
