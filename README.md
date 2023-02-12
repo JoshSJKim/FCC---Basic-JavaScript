@@ -433,6 +433,17 @@ const lastLetterOfLastName = lastName[lastName.length - 1];
 console.log(lastLetterOfLastName);    // e
 ```
 
+### Use Bracket Notation to Find the Nth-to-last Character in a String
+
+- Same logic applies here
+- It is useful when you don't know the length of the string.
+
+```js
+const lastName = "Lovelace";
+const secondToLastLetterOfLastName = lastName[lastName.length - 2];
+console.log(secondToLastLetterOfLastName);    // c
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
