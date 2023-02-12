@@ -351,6 +351,16 @@ const myStr = "My name is " + myName + " and I am well!";
 console.log(myStr);     // "My name is Josh and I am well!"
 ```
 
+### Appending Variables to Strings
+
+- Let the example speak for itself
+
+```js
+const someAdjective = "challenging.";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
