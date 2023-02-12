@@ -613,6 +613,43 @@ function functionName() {
 - Each time the above function is called, the console will display "Hello World"
 - All of the code between the curly braces will be executed when the function is called.
 
+### Use an Array to Store a Collection of Data
+
+- Arrays can be used to store various data types at once.
+
+```js
+let simpleArray = ['one', 2, 'three', true, false, undefined, null];
+console.log(simpleArray.length);    // 7
+```
+
+- A more complex array can be implemented as well.
+- Complex arrays are also called multi-dimensional arrays, which consists of multiple levels of arrays nested in other arrays.
+- Complex arrays can also contain objects.
+
+```js
+let complexArray = [
+  [
+    {
+      one: 1,
+      tow: 2
+    },
+    {
+      three: 3,
+      four: 4
+    }
+  ],
+  [
+    {
+      a: "a",
+      b: "b"
+    },
+    {
+      c: "c",
+      d: "d"
+    }
+  ]
+];
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
