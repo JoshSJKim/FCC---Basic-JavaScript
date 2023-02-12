@@ -321,6 +321,16 @@ const myStr = 'He said, "I don\'t think I can do this any longer".';\
 
 Note: Backslash itself must be escaped in order to display as a backslash
 
+### Concatenating Strings with Plus Operator
+
+- When ```+``` is used with strings, it is called the 'concatenation operator'.
+
+```js
+const ourStr = "This is the start. " + "This is the end.";
+```
+
+- Note that you need to take spaces between strings into account.
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
