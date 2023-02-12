@@ -498,6 +498,21 @@ const myData = myArray[2];  // You can also declare a new variable and assign th
 console.log(myData);        // The new variable result 60 will be displayed in the console
 ```
 
+### Modify Array Data with Indexes
+
+- Remember when trying to modify a string variable character by using the index position throws an error.
+- But array entries are mutable, and the data can be freely modified.
+- This is also true even if the array was declared with a 'const'
+
+```js
+const myArray = [18, 64, 99];
+myArray[0] = 45;
+
+console.log(myArray);   // [45, 64, 99]
+```
+
+- Note that there shouldn't be any spaces between the array name and the square brackets.
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
