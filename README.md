@@ -468,7 +468,6 @@ const wordBlanks = "The " + myAdjective + " hairy " + myNoun + " suddenly " + my
 - Notice that the declared variable values do not include spaces.
 - In order to add a space between the declared variables, simply add an empty string with a space.
 
-
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
