@@ -533,6 +533,19 @@ const nestedsubarray = arr[3][0]; // [10, 11, 12]
 const element = arr[3][0][1];     // [11]
 ```
 
+### Manipulate Arrays with push Method
+
+- Append data to the end of an array using the ```push()``` function
+- ```.push()``` function takes one or more parameters and 'pushes' them onto the end of an array.
+
+```js
+const arr1 = [1, 2, 3];
+arr1.push(4);           // console will display [1, 2, 3, 4]
+
+const arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);          // console will display ["Stimpson", "J", "cat", ["happy", "joy"]]
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
