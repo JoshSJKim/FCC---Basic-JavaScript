@@ -486,6 +486,18 @@ const myArray = ["one", 2];
 const myArray = [["Josh", 43], ["Hannah", 42], ["Nathan", 9], ["JJ", 6], ["Jubilee", 3]]
 ```
 
+### Access Array Data with Indexes
+
+- Bracket notations are used to specify the position of an entry in the array.
+- Remember, indexing uses zero-based indexing.
+
+```js
+const myArray = [50, 60, 70];
+console.log(myArray[0]);    // console will display 50
+const myData = myArray[2];  // You can also declare a new variable and assign the index position of an array
+console.log(myData);        // The new variable result 60 will be displayed in the console
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
