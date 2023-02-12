@@ -359,6 +359,19 @@ console.log(myStr);     // "My name is Josh and I am well!"
 const someAdjective = "challenging.";
 let myStr = "Learning to code is ";
 myStr += someAdjective;
+console.log(myStr);   // "Learning to code is challenging."
+```
+
+### Find the Length of a String
+
+- Find the length of a string value by appending ```.length``` to the string variable or string literal.
+
+```js
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+lastNameLength = lastName.length;
+console.log(lastNameLength);    // 8
 ```
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
