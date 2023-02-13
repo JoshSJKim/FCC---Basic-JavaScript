@@ -664,6 +664,29 @@ const answer = timesFive(8);  // Or you can assign the function to a variable an
 console.log(answer);
 ```
 
+### Global Scope and Functions
+
+- In JS, 'scope' refers to the visibility of variables.
+- Variables that are defined outside of a function block have ```Global Scope```.
+- It means that it can be seen everywhere in the JS code.
+- Variables declared without a ```let``` or ```const``` keyword are automatically created in the global scope.
+- This can cause unintended problems down the road. Make sure you declare variables with a ```let``` or ```const``` keyword.
+
+- There are three types of scope, depending on where in the code it is placed
+
+```js
+let num1 = 18;      // Global scope
+function fun() {
+  let num2 = 20;    // Local scope
+  if (true) {
+    let num3 = 22;  // Block scope
+  }
+}
+```
+
+- if the ```let``` keyword is removed from all variables above, all of the declared variables will become ```global scope```
+
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
