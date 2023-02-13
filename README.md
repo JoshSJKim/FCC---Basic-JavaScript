@@ -613,6 +613,42 @@ function functionName() {
 - Each time the above function is called, the console will display "Hello World"
 - All of the code between the curly braces will be executed when the function is called.
 
+### Passing Values to Function with Arguments
+
+- Parameters are variables that act as 'placeholders' for the values that are to be passed to a function when it's called.
+- Functions are typically defined with one or more parameters.
+- The actual parameter values that are passed into a function when it is called are referred to 'arguments'.
+
+Basic syntax
+
+```js
+function testFunc(param1, param2) {
+  console.log(param1, param2);
+}
+```
+
+- Create a function called ```functionWithArgs``` that accepts two arguments and outputs their sum to the dev console.
+- Call the function with two numbers as arguments.
+
+```js
+function functionWithArgs(num1, num2) {
+  return num1 + num2;
+}
+```
+
+- There is nothing really wrong with this code. It will return the sum of the two arguments passed.
+- But the problem is that it will not automatically display the result to the console.
+- If you want to see the result displayed, you will need to enter ```console.log(functionWithArgs(num1, num2));``` outside of the function with actual values for the parameters for the result to display.
+- The key to the above challenge is 'outputs their sum to the dev console'.
+
+```js
+function functionWithArgs(num1, num2) {
+  console.log(num1 + num2);
+}
+// And call the function to display the result in the console
+functionWithArgs(7, 9);   // The console will display 16
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
