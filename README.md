@@ -682,7 +682,7 @@ console.log(ourArray);      // Console will display ["a", "not b anymore", "c"]
 
 - The length of an array is not fixed.
 - Arrays can be defined with any number of elements.
-- Elements can be added or removed over time. 
+- Elements can be added or removed over time.
 - In other words, arrays are mutable.
 
 ```js
@@ -694,7 +694,23 @@ romanNumerals.push(twentyThree);
 console.log(romanNumerals);   //['XIX', 'XX', 'XXI', 'XXII', 'XXIII']
 ```
 
-- Notice that you can pass values directly to the array or use define variables to pass.
+- Notice that you can pass values directly to the array or define variables to pass.
+
+### Remove Items from an Array with pop() and shift()
+
+- ```pop()``` and ```shift()``` removes an element from an array.
+- The difference between pop, shift and push, unshift is that pop and shift do not take parameter.
+- Each method allows an array to be modified by a single element at a time. i.e first or last element of the array.
+
+```js
+function popShift(arr) {      // Declare function
+  let popped = arr.pop();     // Remove last element from array
+  let shifted = arr.shift();  // Remove first element from array
+  return [shifted, popped];   // Return the removed elements
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));    // ['challenge', 'complete']
+```
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
