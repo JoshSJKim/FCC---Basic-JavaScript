@@ -712,6 +712,43 @@ function popShift(arr) {      // Declare function
 console.log(popShift(['challenge', 'is', 'not', 'complete']));    // ['challenge', 'complete']
 ```
 
+### Remove Items Using Splice()
+
+- Use splice() method to remove elements in the middle of an array.
+- Remove single element, or a series of elements.
+
+```array.splice(num1, num2);```
+
+- The above splice syntax takes 2 parameters.
+  - First parameter refers to the index, or the position of the element in the array.
+  - The second parameter refers to the number of elements to remove.
+  - Note that the second parameter includes the element located in the index position.
+
+```js
+let array = ['today', 'was', 'not', 'so', 'great'];
+array.splice(2, 2);   // splice will remove 2 elements beginning at index '2', which are 'not' and 'so'
+console.log(array);   // ['today', 'was', 'great']
+```
+
+- splice() method can also return the removed elements by assigning it to a new array variable.
+
+```js
+let array = ['I', 'am', 'feeling', 'really', 'happy'];
+let newArray = array.splice(3, 2);
+console.log(newArray);    // ['really', 'happy']
+```
+
+Another example.
+
+- Use a combination of removal methods to remove elements from 'arr' so that it only contains elements that sum to the value of 10
+
+```js
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+arr.splice(4, 4);   // remove 4 elements beginning at 7
+arr.shift();        // remove the first element
+console.log(arr);   // [4, 5, 1]
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
