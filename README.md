@@ -678,6 +678,24 @@ ourArray[1] = "not b anymore";
 console.log(ourArray);      // Console will display ["a", "not b anymore", "c"]
 ```
 
+### Add Items to an Array with push() and unshift()
+
+- The length of an array is not fixed.
+- Arrays can be defined with any number of elements.
+- Elements can be added or removed over time. 
+- In other words, arrays are mutable.
+
+```js
+let twentyThree = 'XXIII';
+let romanNumerals = ['XXI', 'XXII'];
+
+romanNumerals.unshift('XIX', 'XX');
+romanNumerals.push(twentyThree);
+console.log(romanNumerals);   //['XIX', 'XX', 'XXI', 'XXII', 'XXIII']
+```
+
+- Notice that you can pass values directly to the array or use define variables to pass.
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
