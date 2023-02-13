@@ -649,6 +649,21 @@ function functionWithArgs(num1, num2) {
 functionWithArgs(7, 9);   // The console will display 16
 ```
 
+### Return a Value from a Function
+
+- After passing value into a function with arguments, use a return statement to send the value back out of a function.
+
+```js
+function timesFive(num) {
+  return num * 5;
+}
+
+console.log(timesFive(8));    // you can send the function result to display directly in the console.
+
+const answer = timesFive(8);  // Or you can assign the function to a variable and call the variable to display in the console.
+console.log(answer);
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
