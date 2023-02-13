@@ -704,6 +704,22 @@ console.log('outside myLocalScope', myVar);
 // This will throw a ReferenceError because 'myVar' is not defined outside of the function.
 ```
 
+### Global vs. Local Scope in Functions
+
+- It is possible to have both local and global variables with the same name in your code.
+- In this case, local variable takes precedence over the global variable
+
+```js
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  const outerWear = "Sweater";
+  return outerWear;
+}
+
+myOutfit();   // When function is called, it will return "Sweater"
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
