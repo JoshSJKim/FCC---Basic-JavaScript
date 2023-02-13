@@ -686,6 +686,23 @@ function fun() {
 
 - if the ```let``` keyword is removed from all variables above, all of the declared variables will become ```global scope```
 
+### Local Scope and Functions
+
+- Variables that are declared inside a function, as well as its function parameters have ```local scope```
+- This means that it is only visible within the function
+
+```js
+function myLocalScope(name) {
+  // function 'myLocalScope' takes a name argument
+  const myVar = "Good morning " + name;
+  // variable 'myVar' is defined inside the function, making it a local scope.
+    console.log('inside myLocalScope', myVar);
+}
+myLocalScope("Josh");   // When the function is called, console log is displayed "inside myLocalScope: Good morning Josh"
+
+console.log('outside myLocalScope', myVar);
+// This will throw a ReferenceError because 'myVar' is not defined outside of the function.
+```
 
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
