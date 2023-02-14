@@ -878,13 +878,38 @@ console.log(typeof "5"); // console will display 'string'
 - === strict equality operator: Does not convert data types
 - != inequality operator
 - !== strict inequality operator: Does not convert data types
-- > greater than operator
-- >= greater than or equal to operator
+- `> greater than operator
+- `>= greater than or equal to operator
 - < less than operator
 - <= less than or equal to operator
 
-- && logical And operator
-- || logical Or operator
+### Comparison with the Logical And Operator
+
+- There are cases where more than one thing requires testing at once.
+- The ```logical and operator (&&)``` returns 'true' only if operands on both the left and right are true.
+
+The following is an if statement with two conditions
+
+```js
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No"
+```
+
+- In the above code, if num is greater than 5 and less than 10, it will return "Yes".
+- If either one of the conditions is false, it will automatically return "No".
+
+The above can also be written using the && operator.
+
+```js
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No"
+```
 
 ### JavaScript Algorithms and Data Structures - Golf Code
 
