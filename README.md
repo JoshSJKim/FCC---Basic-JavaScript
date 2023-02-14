@@ -940,6 +940,25 @@ if (num > 10 || num < 5) {
 return "Yes";
 ```
 
+### Else Statements
+
+- If an ```if``` statement condition is true, the block of code following its curly braces are executed.
+- If 'false', usually nothing happens.
+- Use an ```else``` statement to execute an alternate block of code when the condition is false.
+
+```js
+function testElse(val) {
+  let result = "";            // variable 'result' is declared globally
+
+  if (val > 5) {              // if 'val' is greater than 5
+    result = "Bigger than 5"; // new value "Bigger than 5" will be reassigned to the variable 'result'
+  } else {                    // for all other conditions
+    result = "5 or Smaller";  // new value "5 or Smaller" will be reassigned to the variable 'result'
+  }
+  return result;              // The result will be returned
+}
+```
+
 ### JavaScript Algorithms and Data Structures - Golf Code
 
 INSTRUCTIONS
