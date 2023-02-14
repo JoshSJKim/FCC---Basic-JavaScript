@@ -774,6 +774,14 @@ function nextInLine(arr, item) {
   return arr.shift();             // This will remove the first element of the array passed and return the removed value.
 }
 
+OR
+
+function nextInLine(arr, item) {
+  arr.push(item);                 // This is the same
+  const removed = arr.shift();    // Declare a const variable and assign the removed element
+  return removed;                 // Return the value assigned to the 'removed' variable. This method seems more logical
+}
+
 let testArr = [1, 2, 3, 4, 5];
 
 console.log("Before: " + JSON.stringify(testArr));  // Will display the original array passed to the function
