@@ -899,7 +899,7 @@ if (num > 5) {
 return "No"
 ```
 
-- In the above code, if num is greater than 5 and less than 10, it will return "Yes".
+- In the above code, if num is greater than 5 and less than 10, it will return "Yes". i.e if number is between 5 and 10
 - If either one of the conditions is false, it will automatically return "No".
 
 The above can also be written using the && operator.
@@ -909,6 +909,35 @@ if (num > 5 && num < 10) {
   return "Yes";
 }
 return "No"
+```
+
+### Comparisons with the Logical Or Operator
+
+- Similar to the && operator, the ```logical or operator (||)``` can take multiple conditions.
+
+Check out the following
+
+```js
+if (num > 10) {
+  return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+```
+
+- If num is greater than 10, it will return "No".
+- If num is less than 5, it will return "No".
+- In other words, the above pattern will return "Yes" only if num is between 5 and 10, inclusive.
+
+The above can be written using the || operator
+
+```js
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
 ```
 
 ### JavaScript Algorithms and Data Structures - Golf Code
