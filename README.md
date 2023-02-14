@@ -872,16 +872,17 @@ console.log(typeof 5); // console will display 'number'
 console.log(typeof "5"); // console will display 'string'
 ```
 
-### Comparison Operators
+### Comparison Operators (Self-explanatory. No further notes on the following)
 
 - == equality operator
 - === strict equality operator: Does not convert data types
 - != inequality operator
 - !== strict inequality operator: Does not convert data types
 - > greater than operator
-- > greater than or equal to operator
+- >= greater than or equal to operator
 - < less than operator
 - <= less than or equal to operator
+
 - && logical And operator
 - || logical Or operator
 
