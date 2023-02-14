@@ -863,6 +863,15 @@ testStrict(10);     // "Not Equal"
 testStrict("7");    // "Not Equal"
 ```
 
+### typeof
+
+- You can determine the type of a variable or value with the ```typeof``` operator
+
+```js
+console.log(typeof 5); // console will display 'number'
+console.log(typeof "5"); // console will display 'string'
+```
+
 ### Comparison Operators
 
 - == equality operator
