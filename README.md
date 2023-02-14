@@ -823,6 +823,29 @@ test(false);
 - If it's true, the function returns "It was true"
 - If not, the function will not execute and automatically return "It was false"
 
+### Comparison with the Equality Operator
+
+- There are many comparison operators in JS.
+- They all return boolean values.
+- The most basic operator is the equality operator (==).
+- Note that equality operator is different from the assignment operator (=).
+
+- In order for JS to compare two different data types (such as numbers and strings), it needs to do some conversion.
+- This is called ```Type Coercion```.
+- In other words, equality operator will consider number 1 to be equal to string "1", or number 6 to be equal to "6".
+
+```js
+function testEqual(val) {
+  if (val == 12) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(testEqual(10));     // console will display "Not Equal"
+console.log(testEqual("12"));   // console will display "Equal" due to Type Coercion
+```
+
 ### Comparison Operators
 
 - == equality operator
