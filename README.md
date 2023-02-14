@@ -959,6 +959,22 @@ function testElse(val) {
 }
 ```
 
+### Else If Statements
+
+- Multiple conditions can be addressed using the ```else if``` statement.
+- No further explanations
+
+```js
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+  }
+}
+
 ### JavaScript Algorithms and Data Structures - Golf Code
 
 INSTRUCTIONS
