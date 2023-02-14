@@ -798,7 +798,30 @@ console.log("After: " + JSON.stringify(testArr));   // Will display the updated 
 - True and False are not the same as "true" and "false".
 - They are like little on/off switches
 
-### 
+### Use Conditional Logic with If statements
+
+- ```if``` statements are used to make decisions in code.
+- The ```if``` statement tells JS to execute the code in curly braces under certain conditions, which are defined in the parentheses
+- These conditions are called ```boolean```.
+
+- If the condition is ```true```, the statement inside the curly braces are executed.
+- If ```false```, the statement will not execute.
+
+```js
+function test(myCondition) {
+  if (myCondition) {
+    return "It was true";
+  }
+  return "It was false";
+}
+
+test(true);
+test(false);
+```
+
+- When ```test``` is called with the value ```true```, the ```if``` statement evaluates ```myCondition``` to see if it's true.
+- If it's true, the function returns "It was true"
+- If not, the function will not execute and automatically return "It was false"
 
 ### Comparison Operators
 
