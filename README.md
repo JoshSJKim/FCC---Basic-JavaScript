@@ -846,6 +846,23 @@ console.log(testEqual(10));     // console will display "Not Equal"
 console.log(testEqual("12"));   // console will display "Equal" due to Type Coercion
 ```
 
+### Comparison with the Strict Equality Operator
+
+- Strict equality operator (===) does not perform type conversion.
+- It means that the the compared values must be strictly equal.
+
+```js
+function testStrict(val) {
+  if (val === 7) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);     // "Not Equal"
+testStrict("7");    // "Not Equal"
+```
+
 ### Comparison Operators
 
 - == equality operator
