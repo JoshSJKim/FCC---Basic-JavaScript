@@ -738,16 +738,51 @@ addSum(15):         // undefined
 console.log(sum);   // 18
 ```
 
+### Assignment with a Returned Value
+
+- Remember that everything to the right side of the equal sign is executed before a value is assigned to a variable.
+- In other words, if a function is placed on the right side of the equal sign of a variable, the function will execute first, and then its return value will be assigned to the variable.
+
+```js
+let processed = 0;          // Variable 'processed' is declared globally with a 'let' keyword. It means that it can be reassigned with a new value.
+function processArg(num) {  // Function processArg will take a number as an argument and return its processed value.
+  return (num + 3) / 5;
+}
+
+processed = processArg(47); 
+// Not re-declaring. Reassigning with function 'processArg' with 47 as its argument.
+// The return value (10) will be newly assigned to variable 'processed'.
+console.log(processed);
+// Console will display the updated value of the variable 'processed'. (10)
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
 
 - Write a function 'nextInLine' which takes an array (arr) and a number (item) as arguments.
 - Add the number to the end of the array, then remove the first element of the array.
-  - Use .push to add the number to the end of the array, and use .shift to remove the first element of the array.
+  - ```arr.push(item)``` will push the item parameter value to the end of the array.
+  - ```arr.shift()``` will remove the first element of the array.
   
 - The nextInLine function should then return the element that was removed.
-  - Assign a const variable for arr.shift() as removed to store the removed number, then return the removed variable.
+  - ```return arr.shift()``` will return the element that was removed.
+
+```js
+function nextInLine(arr, item) {
+  arr.push(item);                 // This will push the 'item' value passed to the function
+  return arr.shift();             // This will remove the first element of the array passed and return the removed value.
+}
+
+let testArr = [1, 2, 3, 4, 5];
+
+console.log("Before: " + JSON.stringify(testArr));  // Will display the original array passed to the function
+console.log(nextInLine(testArr, 6));                // This will execute the function with the variables passed to the function and display the return value
+console.log("After: " + JSON.stringify(testArr));   // Will display the updated array.
+```
+
+- ```JSON.stringify()``` will probably be covered later.
+- But in the mean time, one of its function is to convert an array into a string.
 
 #### Note to self
 
