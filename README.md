@@ -962,7 +962,6 @@ function testElse(val) {
 ### Else If Statements
 
 - Multiple conditions can be addressed using the ```else if``` statement.
-- No further explanations
 
 ```js
 function testElseIf(val) {
@@ -974,6 +973,49 @@ function testElseIf(val) {
     return "Between 5 and 10";
   }
 }
+```
+
+- One thing to remember when using ```if``` and ```else if``` statements is the logical order of the conditions.
+- The function is executed from top to bottom so you need to be mindful of which statement comes first.
+  
+```js
+function order(num) {
+  if (num < 2) {          
+    return "Less than two";
+  } else if (num < 1) {
+    return "Less than one";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+
+console.log(order(0));
+```
+
+- Although the value of 'num' passed through the function is in fact less than 1, the function will return "Less than two".
+- This is because of the logical order of the function is out of place.
+- It would be more logical to place (num < 1) prior to (num < 2).
+
+#### Chaining else if statements
+
+- Multiple ```else/if``` statements can be chained for complex logic.
+- No further explanation.
+
+```js
+function testSize(num) {
+  if (num < 5) {
+    return "Tiny";
+  } else if (num < 10) {
+    return "Small";
+  } else if (num < 15) {
+    return "Medium";
+  } else if (num < 20) {
+    return "Large";
+  } else {
+    return "Huge";
+  }
+}
+```
 
 ### JavaScript Algorithms and Data Structures - Golf Code
 
