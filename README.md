@@ -720,6 +720,24 @@ function myOutfit() {
 myOutfit();   // When function is called, it will return "Sweater"
 ```
 
+### Understanding Undefined Value returned from a Function
+
+- A function can include a ```return``` statement, but it does not have to.
+- If the function does not have a ```return``` statement, the function processes the inner code when it is called, but the returned value is undefined.
+
+```js
+let sum = 0;
+function addSum(num) {
+  sum = sum + num;
+}
+
+addSum(3);          // If called, console will display 'undefined'.
+console.log(sum);   // The console displays 3. The value of the 'sum' variable has changed in a global scope.
+
+addSum(15):         // undefined
+console.log(sum);   // 18
+```
+
 ### JavaScript Algorithms and Data Structures - Stand in Line
 
 INSTRUCTIONS
