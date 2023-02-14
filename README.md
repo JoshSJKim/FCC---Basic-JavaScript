@@ -756,7 +756,7 @@ console.log(processed);
 // Console will display the updated value of the variable 'processed'. (10)
 ```
 
-### JavaScript Algorithms and Data Structures - Stand in Line
+### Stand in Line
 
 INSTRUCTIONS
 
@@ -792,9 +792,13 @@ console.log("After: " + JSON.stringify(testArr));   // Will display the updated 
 - ```JSON.stringify()``` will probably be covered later.
 - But in the mean time, one of its function is to convert an array into a string.
 
-#### Note to self
+### Understanding Boolean Values
 
-- True and False in terms of Booleans are not strings.
+- Boolean, a data type, may be one of two values: ```true``` or ```false```
+- True and False are not the same as "true" and "false".
+- They are like little on/off switches
+
+### 
 
 ### Comparison Operators
 
