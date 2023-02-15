@@ -1066,7 +1066,7 @@ function golfScore(par, strokes) {
 - The regular equality operator is sufficient (==)
 - Only "Eagle" requires <= because anything less than par - 2 (it could be -3, -4, depending on how high the par value is) is considered an "Eagle"
 
-### Selecting from Many Options with Switch Statements
+### Selecting from Many Options with Switch Statements + Default Option
 
 - If there are many options to choose from, use a ```switch``` statement.
 - ```Switch``` statement tests a value and can have many 'case' statements that define various possible values.
@@ -1093,6 +1093,9 @@ function caseInSwitch(val) {
     case 4:
       answer = "delta";
       break;
+    default:
+      answer = "stingray";
+      break;
   }
   return answer;
 }
@@ -1101,6 +1104,8 @@ function caseInSwitch(val) {
 - Depending on the number (val) passed to the switch statement, it will assign the corresponding answer value to the answer variable.
 - If the statement is missing all the 'break' command, the answer will return "delta" regardless of the number (val) passed.
 - If there is one break command after "gamma", the answer will return "gamma" except when number (4) is passed. 4 will return "delta"
+
+- You could add a default option as the last case of a switch statement to provide a return value if an argument (val) passed is not specified in the switch statement.
 
 ### JavaScript Algorithm and Data Structure - Counting Cards
 
