@@ -1107,6 +1107,41 @@ function caseInSwitch(val) {
 
 - You could add a default option as the last case of a switch statement to provide a return value if an argument (val) passed is not specified in the switch statement.
 
+### Multiple Identical Options in Switch Statements
+
+- Remember that case statements are executed until a break is encountered.
+- Use this behaviour as an advantage to handle multiple inputs that generate the same output.
+
+For example,
+
+```js
+function sequentialSizes(val) {
+  let answer = "";
+
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Low";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = "Mid";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "High";
+      break;
+  }
+  return answer;
+}
+```
+
+- Note that you cannot provide a range of numbers, such as '1 ~ 3', '4 ~ 6'.
+- You need to specify each number in the range.
+
 ### JavaScript Algorithm and Data Structure - Counting Cards
 
 INSTRUCTIONS
