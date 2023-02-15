@@ -1250,6 +1250,26 @@ function cc(card) {     // function 'cc' will pass a 'card' value as its argumen
 
 - The if...else statement with the ternary value seems more readable and efficient compared to the switch statement (which I still don't quite understand).
 
+```js
+let count = 0;
+
+function cc(card) {
+  if (card <= 6) {
+    count++;
+  } else if (card >= '10') {
+    count--;
+  }
+  return count + (count > 0 ? " Bet" : " Hold");
+}
+
+console.log(cc(2));     // 1 Bet
+console.log(cc(3));     // 2 Bet
+console.log(cc(7));     // 2 Bet - count does not change
+console.log(cc('K'));   // 1 Bet - Decrement count, still positive
+console.log(cc('A'));   // 0 Hold
+console.log(cc('10'));  // -1 Hold
+```
+
 ### Building JavaScript Objects
 
 - Similar to arrays. Access and modify data using 'Properties' rather than indexes.
