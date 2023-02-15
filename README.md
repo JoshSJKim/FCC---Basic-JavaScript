@@ -1212,10 +1212,32 @@ Do NOT include quotes (single or double) in the output.
 - Use a switch statement to determine what to return based on which cards.
 - Omit any cases for cards 7,8,9 since it will have no effect on the count.
 
-- 1st proposed solution does not work.
-- remember to use '+' for returning values, rather than using a ','.
-- Using 'return count++' and 'return count--' will reset the count to zero, which is not the intended code. Remove 'return'.
-- Still don't quite understand the concept of 'return'.
+```js
+let count = 0;          // global scope. variable 'count' is declared with a value of 0.
+function cc(card) {     // function 'cc' will pass a 'card' value as its argument.
+  switch (card) {         // switch statement is used to pass the card values and determine what to do for the values passed.
+    case 2:               
+    case 3:               // If the card value passed is between 2 and 6, the count will increment by 1.
+    case 4:               // Once count is added, the statement will 'break' and return to receive another card value.
+    case 5:
+    case 6:
+      count++;            // values 7 to 9 are omitted because it has no effect on the card count.
+      break;
+    case 10:              // If the card value passed is between 10 and 'A', the count will decrement by 1.
+    case 'J':             // Once count is updated, the statement will 'break' and return to receive another card value.
+    case 'Q':
+    case 'K':
+    case 'A':
+      count--;
+      break;
+  }
+    if (count > 0) {          // Use 'if...else' statement to determine what to do based on the card count.
+      return count + " Bet";  // If count is positive, return the count value and " Bet"
+    } else {                  // whitespace is added to the string to allow for a space between the count value and the string value
+      return count + " Hold"; // If count is negative, return the count value anc concatenate " Hold"
+  }
+}
+```
 
 #### Alternate solution using if...else statement
 
