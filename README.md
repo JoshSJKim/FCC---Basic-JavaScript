@@ -1064,7 +1064,43 @@ function golfScore(par, strokes) {
 
 - The above code doesn't really require strict equality.
 - The regular equality operator is sufficient (==)
-- Only "Eagle" requires <= because anything less than par - 2 (it could be -3, -4, -5, depending on the par value) is considered an "Eagle"
+- Only "Eagle" requires <= because anything less than par - 2 (it could be -3, -4, depending on how high the par value is) is considered an "Eagle"
+
+### Selecting from Many Options with Switch Statements
+
+- If there are many options to choose from, use a ```switch``` statement.
+- ```Switch``` statement tests a value and can have many 'case' statements that define various possible values.
+- Statements are executed from the first matched 'case' value until a ```break``` is encountered.
+
+- Case values are tested with strict equality (===).
+- The 'break' tells JS to stop executing statements.
+- If there is no 'break', it will move on to execute the following statement.
+
+```js
+function caseInSwitch(val) {
+  let answer = "";          // variable answer is declared as function scope and assigned with an empty string.
+
+  switch (val) {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "beta";
+      break;
+    case 3:
+      answer = "gamma";
+      break;
+    case 4:
+      answer = "delta";
+      break;
+  }
+  return answer;
+}
+```
+
+- Depending on the number (val) passed to the switch statement, it will assign the corresponding answer value to the answer variable.
+- If the statement is missing all the 'break' command, the answer will return "delta" regardless of the number (val) passed.
+- If there is one break command after "gamma", the answer will return "gamma" except when number (4) is passed. 4 will return "delta"
 
 ### JavaScript Algorithm and Data Structure - Counting Cards
 
