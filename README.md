@@ -1040,6 +1040,32 @@ par and strokes will always be numeric and positive. We have added an array of a
 - Use if...else statements to return specific strings based on the comparison between par and number of strokes.
 - Use strict equality operators where applicable (hole in one, par...)
 
+```js
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  if (strokes === 1) {
+    return "Hole-in-one!";
+  } else if (strokes <= par - 2) {
+    return "Eagle";
+  } else if (strokes === par - 1) {
+    return "Birdie";
+  } else if (strokes === par) {
+    return "Par";
+  } else if (strokes === par + 1) {
+    return "Bogey";
+  } else if (strokes === par + 2) {
+    return "Double Bogey";
+  } else {
+    return "Go Home!";
+  }
+}
+```
+
+- The above code doesn't really require strict equality.
+- The regular equality operator is sufficient (==)
+- Only "Eagle" requires <= because anything less than par - 2 (it could be -3, -4, -5, depending on the par value) is considered an "Eagle"
+
 ### JavaScript Algorithm and Data Structure - Counting Cards
 
 INSTRUCTIONS
