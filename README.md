@@ -1322,24 +1322,36 @@ const twoValue = obj["prop two"];
 
 #### Accessing object properties with variables
 
-- used to access a property which is stored as a value of a variable.
-- Do not use quotes around the variable since it's not the value.
+- Another use of bracket notation on objects is to access a property stored as the value of a variable.
+- Do not use quotation marks around the variable name when using it to access the property.
 
-```JS
-const x = {
-  "prop1": "value1",
-  "prop2": "value2",
-  "prop3": "value3"
-}
+```js
+const dogs = {
+  Fido: "Mutt",
+  Hunter: "Doberman",
+  Snoopie: "Beagle"
+};
 
-const myX = "prop2";
-const myY = x[myX];
-console.log(myY);
+const myDog = "Hunter";   // Assign the known name as the value to the variable 'myDog'
+const myBreed = dogs[myDog];  // Use the variable to access the object. The value identified is then assigned to another variable 'myBreed'
+console.log(myBreed);   // Console will display "Doberman"
 ```
 
-The above will display "value2"
+Another example
 
-#### Updating/Adding object properties
+```js
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+const playerNumber = 16;
+const playerName = testObj[playerNumber];
+console.log(playerName);    // Console will display "Montana"
+```
+
+### Updating/Adding object properties
 
 - You can update or add object properties using dot or bracket notation.
 
