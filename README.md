@@ -1294,28 +1294,30 @@ const myDog = {
 #### Accessing objects using dot notation / bracket notation
 
 - use dot notation when you know the name of the property you are trying to access.
+- When accessing data, quotation marks are not required if using dot notation.
 
 ```JS
-const x= {
+const obj= {
   "prop1" = "value1",
   "prop2" = "value2"
 }
 
-const prop1Value = x.prop1;
-const prop2Value = x.prop2;
+const prop1Value = obj.prop1;
+const prop2Value = obj.prop2;
 ```
 
 - use bracket notation when the property you are trying to access has a space in its name.
 - It can still be used for property names without a space in its name.
+- Quotation marks are required when using bracket notation
 
 ```JS
-const x= {
+const obj= {
   "prop one" = "value1",
   "prop two" = "value2"
 }
 
-const oneValue = x["prop one"];
-const twoValue = x["prop two"];
+const oneValue = obj["prop one"];
+const twoValue = obj["prop two"];
 ```
 
 #### Accessing object properties with variables
