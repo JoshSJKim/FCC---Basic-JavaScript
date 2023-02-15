@@ -1142,6 +1142,33 @@ function sequentialSizes(val) {
 - Note that you cannot provide a range of numbers, such as '1 ~ 3', '4 ~ 6'.
 - You need to specify each number in the range.
 
+- Using a ```switch``` statement can be more efficient compared to using an ```if/else if``` statement that functions identically.
+
+### Returning Boolean Values from Functions
+
+- All comparison operators return a boolean 'true' or 'false' value.
+- if/else is commonly used for comparison
+
+```js
+function isLess(a, b) {
+  if (a < b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
+
+The above can be simplified as shown below.
+
+```js
+function isLess(a, b) {
+  return a < b;
+}
+```
+
+- Since the comparison operator will always return boolean (true/false), the arguments passed will be evaluated to determine if it's either true or false, and return the value.
+
 ### JavaScript Algorithm and Data Structure - Counting Cards
 
 INSTRUCTIONS
