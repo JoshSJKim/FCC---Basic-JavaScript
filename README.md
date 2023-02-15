@@ -1272,19 +1272,23 @@ console.log(cc('10'));  // -1 Hold
 
 ### Building JavaScript Objects
 
-- Similar to arrays. Access and modify data using 'Properties' rather than indexes.
+- Objects are similar to arrays.
+- But rather than using indexes to access and modify data, objects use ```properties```.
+- Objects store data in a structured manner.
+
+```js
+const myDog = {
+  "name": "Collie".
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Dot", "Coco"]
+};
+```
   
-  PSEUDO-CODE
+- You can use numbers as properties.
+- You can omit quotes for single-word string properties.
+- But JS will typecast non-string properties as strings.
 
-```JS
-  const x = {
-    "prop1": "value1",
-    "prop2": "value2",
-    "prop3": "value3"
-  }
-  ```
-
-- Properties are stored as strings. It does not need to be, but JS will automatically typecast them as strings.
 - Separate each group of prop and value using commas, with the exception of the final prop and value.
 
 #### Accessing objects using dot notation / bracket notation
