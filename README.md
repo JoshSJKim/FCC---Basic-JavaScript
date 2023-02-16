@@ -1480,15 +1480,15 @@ INSTRUCTIONS
 ```js
 const myMusic = [               // the object is already created
   {                           
-    "artist": "Spyro Gyra",     // simply add in the data
+    "artist": "Spyro Gyra",     // simply add in the nested object data
     "title": " Rollercoaster",
-    "release_year": 1992,
-    "formats": [
+    "release_year": 1992,       // do not use quotes for numbers.
+    "formats": [                // nested objects could also include arrays.
       "CD",
       "Cassette",
-      "LP"
+      "LP"                      // last element of an array, last property of an object, last nested object of an object do not require a comma
     ]
-  },    // data within objects must be separated by a comma, except for the last data.
+  },    // data within objects must be separated by a comma.
   {
     "artist": "Billy Joel",
     "title": "Piano Man",
@@ -1500,7 +1500,7 @@ const myMusic = [               // the object is already created
     ],
     "gold": true
   }
-]
+];                              // Close off the entire object with a semicolon.
 ```
 
 ### Accessing nested objects
@@ -1527,9 +1527,9 @@ const gloveBoxContents = myStorage.car.outside.trunk;         // jack
 
 ### Accessing Nested Arrays
 
-- Use index (bracket notation) to access nested arrays (not nested objects)
+- Objects can contain both nested objects and nested arrays.
+- chain multiple array bracket notation to access nested arrays.
 - Remember, index begins at 0, not 1.
-- Using dot and bracket notation, set the variable secondTree to the second item in the trees list from the myPlants object.
 
 ```js
 const myPlants = [
@@ -1551,8 +1551,8 @@ const myPlants = [
   }
 ];
 
-// Solution
-const secondTree = myPlants[1].list[1];
+const secondTree = myPlants[1].list[1]; // pine
+const firstFlower = myPlant[0].list[2]; // dandelion
 ```
 
 ### JavaScript Algorithms and Data Structures - Record Collection
