@@ -1458,7 +1458,7 @@ INSTRUCTIONS
   ```js
   function checkObj(obj, checkProp) {     
     if (obj.hasOwnProperty(checkProp)) {    // 'if' the 'obj' passed to the function 'has' the specified property 'checkProp',
-      return obj[checkProp];                // return the value of 'checkProp' property in object 'obj'.
+      return obj[checkProp];                // return the value of 'checkProp' property in object 'obj'. Access the 'key' (checkProp) to return its 'value'
     } else {                                // If not, 
       return "Not Found";                   // return "Not Found"
     }
@@ -1475,7 +1475,32 @@ INSTRUCTIONS
 - Add artist and title strings, release_year number, and a formats array of strings.
 
 - The only reason I get confused with this challenge is because I end up over-thinking everything by the time I finish one challenge. Thinking I need to write another function, return something, push or shift something here and there.
-- Just read the instructions. It usually tells me what I need to do. In this case, simply add it in.
+- Just read the instructions. It usually tells me what I need to do. In this case, think of it as declaring a variable.
+
+```js
+const myMusic = [               // the object is already created
+  {                           
+    "artist": "Spyro Gyra",     // simply add in the data
+    "title": " Rollercoaster",
+    "release_year": 1992,
+    "formats": [
+      "CD",
+      "Cassette",
+      "LP"
+    ]
+  },    // data within objects must be separated by a comma, except for the last data.
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  }
+]
 
 #### Accessing nested objects
 
