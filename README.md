@@ -1351,7 +1351,7 @@ const playerName = testObj[playerNumber];
 console.log(playerName);    // Console will display "Montana"
 ```
 
-### Updating/Adding object properties
+### Update/Add/Delete object properties
 
 - You can update or add object properties using dot or bracket notation.
 
@@ -1364,24 +1364,29 @@ const myDog = {
 };
 ```
 
-Change or add the object property by using the following.
+Update the object property by reassigning its value.
 
 ```JS
-myDog.name = "Change/add the value";
+myDog.name = "Happy Coder";
+console.log(myDog.name); // Console will display "Happy Coder"
 ```
 
-or
+Or
 
 ```JS
-myDog["name"] = "Change/add the value";
+myDog["name"] = "Happy Coder";
 ```
 
-#### Delete object properties
+Add new property in a similar manner
 
-- in the same manner as changing or adding object properties. Just do not assign a value do it.
+```js
+myDog.bark = "Woof-woof"; // This will add the new property "bark" in the 'myDog' object with a value "Woof-woof"
+```
 
-```JS
-delete myDog.bark; || delete myDog[bark];
+Delete a property by doing the following
+
+```js
+delete myDog.bark; // with the key word 'delete', specify the object name and the property you wish to delete.
 ```
 
 ### Using Objects for Lookups
