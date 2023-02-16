@@ -1501,8 +1501,9 @@ const myMusic = [               // the object is already created
     "gold": true
   }
 ]
+```
 
-#### Accessing nested objects
+### Accessing nested objects
 
 - This is quite straight forward.
 - Assign the contents of the glove box property inside myStorage to the gloveBoxContents variable.
@@ -1525,7 +1526,7 @@ const myStorage = {
 const gloveBoxContents = myStorage.car.inside["glove box"];
 ```
 
-#### Accessing Nested Arrays
+### Accessing Nested Arrays
 
 - Use index (bracket notation) to access nested arrays (not nested objects)
 - Remember, index begins at 0, not 1.
