@@ -1391,26 +1391,49 @@ delete myDog.bark; // with the key word 'delete', specify the object name and th
 
 ### Using Objects for Lookups
 
-INSTRUCTIONS
+- Objects can be thought of as a key/value storage.
+- If you have tabular data, you can use an object to lookup values (rather than switch of if/else)
 
-- Convert the switch statement into an object called lookup.
-  - This is self explanatory.
+```js
+const article = {
+    "title": "How to create objects in JavaScript",
+    "link": "https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/",
+    "author": "Kaashan Hussain",
+    "language": "JavaScript",
+    "tags": "TECHNOLOGY",
+    "createdAt": "NOVEMBER 28, 2018"
+  };
 
-- Use it to look up val and assign the associated string to the result variable.
-  - This had me confused for a bit. My trouble with JavaScript is figuring out what to use for property, what is the value, which function is pointing to where, where is the return value going, etc.
-  - "Use it(object "lookup") to look up val"
-    - So it should be
+  const articleAuthor = article.author;   // declare a variable and assign it with the appropriate value in the object
+  const articleLink = article.link;
 
-      ```JS
-      lookup[val] 
-      ```
+  const value = "title";
+  const valueLookup = article[value];
 
-    - Not dot notation since I'm looking for a variable, and no strings since it's not a value.
-    - Where should this be assigned? "Assign the associated string (the value that is looked up) to the result variable. So, in other words, assign the value that is looked up to the result variable.
+  console.log(valueLookup);     // How to create objects in JavaScript
+  console.log(articleAuthor);   // Kaashan Hussain
+  console.log(articleLink);     // https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/
 
-    ```JS
-    result = lookup[val];
-    ```
+  ```
+
+```js
+function phoneticLookup(val) {
+  let result = "";        // declare a function scope variable with the name 'result' and value of an empty string.
+  
+  const lookup = {
+    "alpha": "Adams",     // Using switch or if/else seems inefficient since you have to specify 'if' this, then 'return' that.
+    "bravo"; "Boston",    // Create an object containing all possible arguments and its corresponding return values.
+    "charlie": "Chicago", 
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+
+  result = lookup[val];   // reassign the variable 'result' with the 'access path' to the object 'lookup'. 
+                          // (val) passed to the function will be accessed in the object 'lookup', and its value will be assigned to the variable 'result'.    
+  return result;          // return 'result'
+}
+```
 
 ### Testing objects for properties
 
