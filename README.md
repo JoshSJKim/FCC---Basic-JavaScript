@@ -1585,7 +1585,7 @@ INSTRUCTION
   - The above if statement is passable as it is, but the following would also work.
   
   ```JS
-  if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks) === false) {
+  if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks") === false) {
     records[id][prop] = [value];
   }
   ```
@@ -1596,7 +1596,7 @@ INSTRUCTION
 
   ```JS
   if (prop === "tracks" && value !== "") {
-    records[id][tracks].push(value);
+    records[id][prop].push(value);
   }
   ```
 
@@ -1607,6 +1607,28 @@ INSTRUCTION
     delete records[id][prop];
   }
   ```
+
+  Assemble
+
+  ```js
+  function updateRecords(records, id, prop, value) {
+    if (prop !== "tracks" && value !== "") {
+      records[id][prop] = value;
+    } else if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks") === false) {
+      records[id][prop] = [value];
+    } else if (prop === "tracks" && value !== "") {
+      records[id][prop].push(value);
+    } else if (value === "") {
+      delete records[id][prop];
+    }
+    return records;
+  }
+  ```
+
+  - I thought dot notation and bracket notation are interchangeable.
+  - dot notation can be used if you know the name of the property you are accessing.
+  - The function is iterating through objects that are unknown.
+  - In this case, use bracket notation to access passed arguments.
 
 ### while loop
 
