@@ -1505,9 +1505,8 @@ const myMusic = [               // the object is already created
 
 ### Accessing nested objects
 
-- This is quite straight forward.
-- Assign the contents of the glove box property inside myStorage to the gloveBoxContents variable.
-- Use dot notation wherever applicable, bracket for property names with spaces in it.
+- Sub-properties of objects can be accessed by chaining together dot or bracket notations.
+- Remember properties with multiple words in its name require bracket notation with quotation marks.
 
 ```js
 const myStorage = {
@@ -1522,8 +1521,8 @@ const myStorage = {
   }
 };
 
-// Solution
-const gloveBoxContents = myStorage.car.inside["glove box"];
+const gloveBoxContents = myStorage.car.inside["glove box"];   // maps
+const gloveBoxContents = myStorage.car.outside.trunk;         // jack
 ```
 
 ### Accessing Nested Arrays
