@@ -1435,27 +1435,35 @@ function phoneticLookup(val) {
 }
 ```
 
-### Testing objects for properties
+### Testing objects for properties (.hasOwnProperty())
 
 - Use .hasOwnProperty(propname) to determine if the property in question has the given property name. This method returns True or False.
 
-    INSTRUCTIONS
-  - Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp).
-  - If the property is found, return that property's value. If not, return "Not Found".
+```js
+const myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+
+myObj.hasOwnProperty("top");      // true
+myObj.hasOwnProperty("middle");   // false
+```
+
+INSTRUCTIONS
+
+- Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp).
+- If the property is found, return that property's value. If not, return "Not Found".
 - use if...else statement to determine if obj.hasOwnProperty(checkProp) is true or false.
   
-  ```JS
-  if (obj.hasOwnProperty(checkProp)) {
+  ```js
+  function checkObj(obj, checkProp) {     
+    if (obj.hasOwnProperty(checkProp)) {    // 'if' the 'obj' passed to the function 'has' the specified property 'checkProp',
+      return obj[checkProp];                // return the value of 'checkProp' property in object 'obj'.
+    } else {                                // If not, 
+      return "Not Found";                   // return "Not Found"
+    }
   }
   ```
-
-  - If true, return the value assigned to 'checkProp' within the object (obj). Remember to use bracket notation.
-  
-  ```JS
-  return obj[checkProp];
-  ```
-
-  - If false (else), return "Not Found".
   
 ### Manipulating Complex Objects
 
