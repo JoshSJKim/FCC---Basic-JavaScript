@@ -1682,6 +1682,20 @@ for (let i = 1 ; i <= 5 ; i++) {  // declare variable 'i' ; while 'i' is less th
 console.log(myArray);             // [1, 2, 3, 4, 5]
 ```
 
+### Iterate Odd Number With a For Loop
+
+- You can change the final expression to increment or decrement by values greater than 1
+- by initializing the variable with a value of 0, and incrementing by 2, you can count by even numbers.
+- Initialize the variable with a value of 1 and increment by 2 to count by odd numbers.
+
+```js
+const myArray = [];
+for (let i = 1 ; i < 10 ; i += 2) {
+  myArray.push(i);
+}
+
+console.log(myArray);   // [1, 3, 5, 7, 9]
+```
 
 ### Iterate through an Array with a for loop
 
