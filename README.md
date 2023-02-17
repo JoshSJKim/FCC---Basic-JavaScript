@@ -1649,11 +1649,39 @@ console.log(myArray); // [5, 4, 3, 2, 1, 0]
 
 ### for loop
 
+- ```for``` loop can also be used to run the same code multiple times.
+- It is the most common type of loop.
+- The code runs for specific number of times.
+
+- ```for``` loops are declared with three optional expressions separated by semicolons
+
 PSEUDO-CODE
 
 ```JS
-for ('initialization statement'; 'condition statement'; 'final expression');
+for (a; b; c);
 ```
+
+- 'a' is the initialization statement
+  - It is executed once only before the loop starts.
+  - Typically used to define and setup the loop variable
+
+- 'b' is the condition statement.
+  - It is evaluated at the beginning of every loop iteration and continue as long as the condition returns true.
+  - If the condition returns false at the beginning of the loop iteration, the loop will stop executing.
+
+- 'c' is the final expression.
+  - It is executed at the end of each loop iteration, prior to the next condition check.
+  - Usually used to increment or decrement your loop counter.
+
+```js
+const myArray = [];               // create an array 'myArray' with an empty array as its value.
+for (let i = 1 ; i <= 5 ; i++) {  // declare variable 'i' ; while 'i' is less than or equal to 5 ; increment 'i' by 1)
+  myArray.push(i);                // Append the incrementing value of 'i' after every loop iteration to myArray
+}
+
+console.log(myArray);             // [1, 2, 3, 4, 5]
+```
+
 
 ### Iterate through an Array with a for loop
 
