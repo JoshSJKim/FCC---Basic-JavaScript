@@ -1632,12 +1632,19 @@ INSTRUCTION
 
 ### while loop
 
-PSEUDO-CODE
+- Run the same code multiple times using the 'while' loop.
+- The ```while``` loop runs 'while' a specified condition is true and stops when the condition returns false.
 
-```JS
-while ('condition') {
-  'execute command'
+```js
+const myArray = [];   // declare an array 'myArray' with an empty array.
+let i = 5;            // declare a variable 'i' with a value of 5.
+
+while (i >= 0) {      // 'while' 'i' is greater than or equal to 0,
+  myArray.push(i);    // push value of 'i' to the empty array 'myArray'.
+  i--;                // decrement the value of 'i' by 1 every recurrence of the loop until 'i >= 0' returns false.
 }
+
+console.log(myArray); // [5, 4, 3, 2, 1, 0]
 ```
 
 ### for loop
