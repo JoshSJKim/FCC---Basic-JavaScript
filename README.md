@@ -1697,6 +1697,19 @@ for (let i = 1 ; i < 10 ; i += 2) {
 console.log(myArray);   // [1, 3, 5, 7, 9]
 ```
 
+### Count Backwards with a for Loop
+
+- Reverse the logic and count backwards.
+
+```js
+const myArray = [];
+  for (let i = 9 ; i >= 0 ; i -= 2) {
+    myArray.push(i);
+  }
+
+  console.log(myArray);
+```
+
 ### Iterate through an Array with a for loop
 
 INSTRUCTIONS
@@ -1711,10 +1724,12 @@ INSTRUCTIONS
 
 ```JS
 const myArr = [2,3,4,5,6]
-total = 0;
-for (let i=0; i < myArr.length ; i++) {
-  total += myArr[i];
+let total = 0;                            // declaring variable 'total' with a const keyword will not work since it will be read-only
+for (let i=0; i < myArr.length ; i++) {   // declare variable 'i' with a value of 0. This value is the 'index' value.
+  total += myArr[i];                      // variable 'total' is declared with a 'let' keyword and it can be updated.
 }
+
+console.log(total);     // 20
 ```
 
 - total += myArr[i] is total = total + myArr[i].
