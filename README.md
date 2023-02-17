@@ -1776,7 +1776,7 @@ while (i < 5) {
 }
 ```
 
-- The above code will fail to run on the first pass since i is not less than 5, and myArr will remain an empty array ([]).
+- The above code will fail to run on the first pass since variable 'i' declared is not less than 5, and myArr will remain an empty array ([]).
 
 ```JS
 const myArr = [];
@@ -1800,6 +1800,35 @@ Based on what I understand so far
 - recursion is a technique where function calls itself in order to solve a problem.
 - As the function calls itself repeatedly, it breaks down the problem in to smaller pieces, until a base case (a condition at which point the function stops calling itself) is reached.
 - Recursion must have a base case in place, or else it will never stop executing.
+
+```js
+function sum(arr, n) {
+  let result = 0;
+  for (let i = 0; i < n; i++) {
+    result += arr[i];
+  }
+  return result;
+}
+```
+
+- The above function uses a for loop to return the sum of 'n' number of elements in an array 'arr'.
+- The above can be written using recursion as shown below.
+
+```js
+function sum(arr, n) {
+  if (n <= 0) {     // This is the base case. If omitted, or setup improperly, the code will likely throw an error, or enter into an infinite loop.
+    return 0;       // if base case condition is fulfilled, the function will stop executing and return 0.
+  } else {          // Until base case condition is fulfilled, the code below will execute.
+    return sum(arr, n - 1) + arr[n - 1];
+  }                 // 'sum(arr, n - 1)' will return with decrementing 'n' values and execute the code until it reaches the base case
+                    // 'arr[n - 1]' will access the appropriate index value within the array and store it in the call stack.
+}                   // Once the function completes iterating through the array and the function stops execution, 
+                    // the array values stored in the call stack will be added up to return the sum of all of the values of the array.
+```
+
+- The logic behind recursion is still a bit confusing.
+  - Which part of the code tells 'sum(arr, n - 1)' to finish executing before adding all the values?
+  - Which part of the code tells the function to add up all the values stored in the call stack?
 
 ### JavaScript Algorithms and Data Structures - Profile Lookup
 
