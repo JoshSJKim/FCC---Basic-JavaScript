@@ -412,7 +412,7 @@ let myStr = "Jello World";
 myStr = "Hello World";
 ```
 
-## Use Bracket Notation to Find the Nth Character in a String
+### Use Bracket Notation to Find the Nth Character in a String
 
 - Use the bracket notation to find a character at other index positions in a string.
 
@@ -996,7 +996,7 @@ console.log(order(0));
 - This is because of the logical order of the function is out of place.
 - It would be more logical to place (num < 1) prior to (num < 2).
 
-#### Chaining else if statements
+### Chaining else if statements
 
 - Multiple ```else/if``` statements can be chained for complex logic.
 - No further explanation.
@@ -1239,7 +1239,7 @@ function cc(card) {     // function 'cc' will pass a 'card' value as its argumen
 }
 ```
 
-#### Alternate solution using if...else statement
+### Alternate solution using if...else statement
 
 - if card value is less than or equal to 6, add 1 to count.
 - else if card value is greater than or equal to (>=) "10" (not number '10'), subtract count by 1.
@@ -1291,7 +1291,7 @@ const myDog = {
 
 - Separate each group of prop and value using commas, with the exception of the final prop and value.
 
-#### Accessing objects using dot notation / bracket notation
+### Accessing objects using dot notation / bracket notation
 
 - use dot notation when you know the name of the property you are trying to access.
 - When accessing data, quotation marks are not required if using dot notation.
@@ -1320,7 +1320,7 @@ const oneValue = obj["prop one"];
 const twoValue = obj["prop two"];
 ```
 
-#### Accessing object properties with variables
+### Accessing object properties with variables
 
 - Another use of bracket notation on objects is to access a property stored as the value of a variable.
 - Do not use quotation marks around the variable name when using it to access the property.
@@ -1555,7 +1555,7 @@ const secondTree = myPlants[1].list[1]; // pine
 const firstFlower = myPlant[0].list[2]; // dandelion
 ```
 
-### JavaScript Algorithms and Data Structures - Record Collection
+### Record Collection
 
 INSTRUCTION
 
@@ -1761,7 +1761,7 @@ for (let i=0; i<arr.length; i++) {
 console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]])); // 5040
 ```
 
-#### do...while loops
+### do...while loops
 
 - do...while loops behave similar to other types of loops.
 - The difference is that it ensures that the command specified in the initial 'do' statement will run at least once.
@@ -1830,49 +1830,90 @@ function sum(arr, n) {
   - Which part of the code tells 'sum(arr, n - 1)' to finish executing before adding all the values?
   - Which part of the code tells the function to add up all the values stored in the call stack?
 
-### JavaScript Algorithms and Data Structures - Profile Lookup
+### Profile Lookup
 
 INSTRUCTIONS
 
 - We have an array of objects representing different people in our contacts lists.
 
-- A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.
+- A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written.
 
 - The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.
-  - Use a for loop to go through the contacts list. Since the contacts list is nested in an array, assign a variable to iterate through the array.
 
-    ```JS
-    for (let i = 0; i < contacts.length; i++)
-    ```
+```js
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];                                              // An Array of objects created with multiple contact information
 
-  - Use if...else statement to find out if the name passed through the function is found in the contacts list, and another nested if statement to find out if the contacts in that specific array element contains the property (prop) passed through the function.
-  
-    ```JS
-    if (contacts[i].firstName === name) {
-      if (contacts[i].hasOwnProperty(prop)) {
+function lookUpProfile(name, prop) {            // function 'lookUpProfile' will iterate through the array with two arguments 'name' and 'prop'
+  for (let i = 0; i < contacts.length; i++) {   // 'i' referring to the index position is declared with a value 0
+                                                // While 'i' is less than the length of the object 'contacts', 'i' will increment by 1 for every loop
+    if (contacts[i]["firstName"] === name) {    // if the 'firstName' of index [i] in contacts matches the 'name' passed to the function
+      if (contacts[i].hasOwnProperty(prop)) {   // if index [i] in contacts has the property 'prop' passed to the function
+        return contacts[i][prop];               // if both are true, return the property value located at index [i] in contacts
+      } else {                                  // if 'name' passes but 'prop' does not
+        return "No such property";              // return "No such property"
       }
     }
-    ```
-
-- If both are true, then return the "value" of that property. Return the value of the property (prop) of the specific name in the array element ```(contacts[i])```
-  
-  ```JS
-  return contacts[i][prop];
-  ```
-
-- If name does not correspond to any contacts then return the string No such contact. If the name passed through the function is not found in the contacts list, it means that the property (prop) is non-existent as well. This return statement should be left outside of the for loop, meaning that if the specified name is not found in the contact list from top to bottom, it will return "No such contact" to terminate the function.
-
-```JS
-return "No such contact"; // outside of for loop //
+  } return "No such contact";                   // if 'name' does not pass, it means that 'prop' does not pass either and return "No such contact"
+}                                               // 'short-circuit evaluation'
 ```
 
-- If prop does not correspond to any valid properties of a contact found to match name then return the string No such property. After the two if statements and its return statement, add an 'else' statement to return "No such property" in the case that the name passed through the function is found in the contacts list but the second if statement (the hasOwnProperty) returns 'false.
+- I thought about using the following code, but it didn't pass
 
-```JS
-} else {
-  return "No such property";
+```js
+function lookUpProfile(name, prop) {
+for (let i = 0; i <contacts.length; i++) {
+  if (contacts[i]["firstName"] === name && contacts[i].hasOwnProperty(prop)) {
+    return contacts[i][prop];
+  } else {
+    return "No such property";
+  }
+} return "No such contact";
 }
 ```
+
+- I tried using the '&&' operator to simplify the code.
+- The logic behind the two codes is quite similar.
+- The first code, the function will execute and look for the 'name' according to the index value.
+  - If a match is found, it will check for the 'prop' passed to the function.
+  - If the specified 'prop' is found, it will return its value.
+  - If 'prop' is not found, it will return 'No such property'
+  - If 'name' is not found, it will return 'No such contact'.
+  - This code is very sequential.
+  - This code will iterate through the entire array before returning a result.
+  
+- The second code however, has both of the conditions in a single parentheses separated by the '&&' operator.
+  - This means if 'name' and 'prop' are found, it will return its value.
+  - if 'name' match is not found, it will return 'No such contact' and stop execution.
+  - If 'name' is found, it will look for the 'prop'
+  - If 'prop' is not found, it will return 'No such property' and will not iterate through the rest of the array.
+  - There may be another entry with the same 'name'
+
+- This took some time to understand. It will take a while before it actually sinks in.
 
 #### Generating random fractions
 
