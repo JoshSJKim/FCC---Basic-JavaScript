@@ -1943,7 +1943,7 @@ return Math.floor(Math.random() * 50);
 
 - Multiplying the random decimal by 50 will generate a random whole number between 0 and 49.
 
-#### Generating random whole numbers within a range
+### Generating random whole numbers within a range
 
 - Use the following formula to generate a random whole number between defined max and min values.
 
@@ -1957,7 +1957,7 @@ function randomRange(max, min) {
 - For example, if min is 5 and max is 10, (max-min+1) will equal 6, which will make the random number fall between 0 and 5.99.
 - But if we add the min value to the result, it will shift the range of numbers to fall within the defined range, which is 5 and 10 (inclusive, since the shifting will make the final result 11).
 
-#### parseInt function
+### parseInt function
 
 - parseInt() will parse (interpret) a string value to an integer.
 
@@ -1967,8 +1967,8 @@ function convertToInteger(str) {
 }
 ```
 
-- The above function will parse a string value, such as "89" to the number value '89'.
-- If the first character of the string value can't be converted to a number, it will return NaN (Not a Number).
+- The above function will parse a string value, such as "89" to the numeric value 89.
+- If the first character of the string value can't be converted to a number, it will return 'NaN' (Not a Number).
 
 ### RADIX
 
