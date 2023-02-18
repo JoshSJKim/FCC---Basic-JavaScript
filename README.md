@@ -1974,7 +1974,7 @@ function convertToInteger(str) {
 
 - Another concept that I am very unfamiliar with.
 - Radix, also known as base in mathematics, is the number of unique digits or symbols used to represent numbers in a positional numeral system.
-  The most common base used is base 10. Other common bases include base 2 (binary), base 8 (octal), and base 16 (hexadecimal).
+   The most common base used is base 10. Other common bases include base 2 (binary), base 8 (octal), and base 16 (hexadecimal).
 
 ```JS
 function convertToInteger(str) {
@@ -1982,7 +1982,7 @@ function convertToInteger(str) {
 }
 ```
 
-- The above function will pass a string value and return a value parsed based on the radix (base) value defined.
+- The above function will pass a string value and return a value parsed based on the radix (base) value entered (ex. 2 for binary).
 
 #### Ternary (conditional) operator
 
