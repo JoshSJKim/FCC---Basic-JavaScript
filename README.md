@@ -1917,7 +1917,8 @@ for (let i = 0; i <contacts.length; i++) {
 
 ### Generating random fractions
 
-- You can use Math.random() function to generate random fractions between 0 (inclusive) and 1 (exclusive). This means that the function can return 0 but never 1.
+- You can use Math.random() function to generate random fractions between 0 (inclusive) and 1 (exclusive).
+- This means that the function can return 0 but never 1.
 
 ```JS
 function randomFraction() {
@@ -1927,7 +1928,7 @@ function randomFraction() {
 
 - The above function will return a random fraction between 0 and 1.
 
-#### Generating random whole numbers
+### Generating random whole numbers
 
 - Use Math.random() to generate a random fraction.
 - Multiply the random fraction by a larger whole number.
