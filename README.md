@@ -2075,7 +2075,7 @@ INSTRUCTIONS
 - NOTE TO SELF: Do not confuse shift and unshift. shift will remove the first element of an array. unshift will enter an element to the beginning of an array.
   shift - out. unshift - in.
 
-### JavaScript Algorithms and Data Structures - Recursion range of numbers
+### Recursion range of numbers
 
   INSTRUCTIONS
 
@@ -2088,13 +2088,14 @@ INSTRUCTIONS
 - Apply the same logic used for the recursion countdown.
 
 ```JS
-function rangeOfNumbers(startNum, endNum) {
-  if (endNum < startNum) {
-    return [];
-    } else {
-      const myArr = rangeOfNumbers(startNum, endNum - 1);
-      myArr.push(endNum);
-      return myArr;
+function rangeOfNumbers(startNum, endNum) { //function created and it take two parameters.
+  if (endNum < startNum) {  // endNum needs to be less than the startNum in order to reach the base case and include the startNum value in the array
+    return [];  // When base case is reached, prepare the empty array to be filled
+    } else {    // until base case is reached, execute the following.
+      // read-only variable 'myArr' is initialized. Its value is the function with endNum value decrementing by 1 after each loop until base case is reached
+      const myArr = rangeOfNumbers(startNum, endNum - 1); // The values are stored in the call stack
+      myArr.push(endNum); // When base case is reached and loop exits, push only 'endNum' to array 'myArr'. LIFO
+      return myArr; // return myArr with the range of numbers laid out in the array.
     }
   }
 ```
