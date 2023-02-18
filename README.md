@@ -2041,7 +2041,7 @@ function checkSign(num) {
 
 - It is best practice the separate each line when using multiple conditions for purposes of readability.
 
-### JavaScript Algorithms and Data Structures - Recursion Countdown
+### Recursion Countdown
 
 INSTRUCTIONS
 
@@ -2054,13 +2054,14 @@ INSTRUCTIONS
   - This will be the base case. When it is reached, the function will stop calling it self.
   
   ```JS
-  function countdown(n) {
-    if (n < 1) {
-      return [];
-    } else {
-      const myArr = countdown(n - 1);
-      myArr.unshift(n);
-      return myArr;
+  function countdown(n) { // function 'countdown' is created and will take 'n' value as an argument
+    if (n < 1) {          // The base case. if 'n' is less than 1,
+      return [];          // return an empty array.
+    } else {              // if 'n' is not less than 1, execute the following
+      // initialize read-only variable 'myArr' and its value is setup to decrement the value of argument 'n' by 1 until base case is reached
+      const myArr = countdown(n - 1); // The decrementing values will be stored in the call stack until base case is reached.
+      myArr.unshift(n); // The values stored in the call stack will be unshifted into array 'myArr' 
+      return myArr; // Array 'myArr' will be returned with the countdown sequence.
     }
   }
   ```
