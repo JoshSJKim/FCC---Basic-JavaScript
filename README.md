@@ -2009,9 +2009,10 @@ function checkEqual(a, b) {
 }
 ```
 
-#### Multiple Ternary operators
+### Multiple Ternary operators
 
-- Ternary operators can be chained to execute multiple commands based on various conditions, similar to if, else if, and else statements.
+- Ternary operators can be chained to execute multiple commands based on various conditions
+- Similar to if, else if, and else statements.
 
 ```JS
 function checkSign(num) {
