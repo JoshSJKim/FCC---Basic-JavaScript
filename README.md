@@ -1915,7 +1915,7 @@ for (let i = 0; i <contacts.length; i++) {
 
 - This took some time to understand. It will take a while before it actually sinks in.
 
-#### Generating random fractions
+### Generating random fractions
 
 - You can use Math.random() function to generate random fractions between 0 (inclusive) and 1 (exclusive). This means that the function can return 0 but never 1.
 
